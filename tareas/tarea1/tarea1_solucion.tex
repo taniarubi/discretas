@@ -152,13 +152,46 @@
 
     \begin{itemize}
         % Ejercicio 5.1
-        \item[a)] $5x + 3y * a - 4y[y := x]$
+        \item[a)] $5x + 3y * a - 4y[y := x]$ 
+
+        \textsc{Solución:} La sustitución se aplica a la expresión más cercana,
+        que en este caso es $4y$.
+        \begin{align*} 
+            5x + 3y * a - 4y[y := x]
+            =& \; 5x + 3y * a - 4(x) \\
+            =& \; 5x + 3y * a - 4x
+        \end{align*}
+
         % Ejercicio 5.2
         \item[b)] $(5x + 3y * a - 4y)[y := x]$
+
+        \textsc{Solución:} La sustitución de aplica a toda la expresión.
+        \begin{align*}
+            (5x + 3y * a - 4y)[y := x]
+            =& \; (5x + 3(x) * a - 4(x)) \\
+            =& \; 5x + 3x * a - 4x    
+        \end{align*}
+
         % Ejercicio 5.3
         \item[c)] $(5x + 3y * a - 4y)[y, \; x := x, \;y]$
+
+        \textsc{Solución:}
+        \begin{align*}
+            (5x + 3y * a - 4y)[y, \; x := x, \;y]
+            =& \; (5(y) + 3(x) * a - 4(x)) \\ 
+            =& \; 5y + 3x * a - 4x
+        \end{align*}
+
         % Ejercicio 5.4
         \item[d)] $(5x + 3y * a - 4y)[y := x][x := 3]$
+
+        \textsc{Solución:}
+        \begin{align*}
+            (5x + 3y * a - 4y)[y := x][x := 3]
+            &= \; (5x + 3(x) * a - 4(x))[x :=3] \\ 
+            &= \; (5(3) + 3((3))) * a - 4((3)) \\ 
+            &= \; 15 + 9 * a - 12
+        \end{align*}
     \end{itemize}
 
     % Ejercicio 6.
