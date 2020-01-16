@@ -201,8 +201,43 @@
     \begin{itemize}
         % Ejercicio 6.1
         \item[a)] $((p \land q) \lor (r → s)) → r$
+
+        \textsc{Solución:} Esta expresión pertenece al esquema condicional, y 
+        para justificarlo mostraremos la sucesión de sustituciones textuales 
+        que se fueron realizando: 
+
+        \begin{align*}
+            (p → q)[p, \; q := a \lor b, \; r][a, \; b := p \land q, \; r → s]
+            =& ((a \lor b) → r)[a, \; b := p \land q, \; r → s] \\
+            =& (((p \land q) \lor (r → s)) → r) \\
+            =& ((p \land q) \lor (r → s)) → r
+        \end{align*}
+
+        Por lo tanto, el conectivo principal es $→$, de donde su rango izquierdo 
+        es $((p \land q) \lor (r → s))$ y su rango derecho es $r$.
+
         % Ejercicio 6.2
-        \item[b)] $p \lor q → r → s → t$
+        \item[b)] $p \lor q → r → s ↔ t$
+
+        \textsc{Solución:} Primero, le colocamos paréntesis a la expresión 
+        según la precedencia y la asociatividad de los conectivos.
+        
+        \begin{center}
+            $(((p \lor q) → (r → s)) ↔ t)$
+        \end{center}
+
+        Así, esta expresión pertenece al esquema condicional, y para 
+        justificarlo mostraremos la sucesión de sustituciones textuales que se 
+        fueron realizando:
+
+        \begin{align*}
+            (p ↔ q)[p, \; q := a → b, \; t][a, \; b := p \lor q, \; r → s]
+            =& ((a → b) ↔ t)[a, \; b := p \lor q, \; r → s] \\ 
+            =& (((p \lor q) → (r → s)) ↔ t)
+        \end{align*}
+
+        Por lo tanto, el conectivo principal es $↔$, de donde su rango derecho 
+        es $t$ y su rango izquierdo es $((p \lor q) → (r → s))$.
     \end{itemize}
 
     % Ejercicio 7.
