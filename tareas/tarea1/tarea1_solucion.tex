@@ -13,6 +13,8 @@
 \usepackage{latexsym}
 \usepackage{enumerate}
 \usepackage{ragged2e}
+% Soporte para la imágenes.
+\usepackage{graphicx}
 % Modificamos los márgenes del documento.
 \usepackage[lmargin=2cm,rmargin=2cm,top=2cm,bottom=2cm]{geometry}
 
@@ -314,11 +316,20 @@
         % Ejercicio 10.1
         \item[a)] $(P \lor Q) \land \neg P \land \neg Q$ 
 
-        \textsc{Solución:} La fórmula es satisfacible. \\ 
-        Primero 
+        \textsc{Solución:} La fórmula no es satisfacible. Para demostrar que 
+        cada estado evalúa a falso, mostraremos su respectiva tabla de verdad.
+
+        \begin{center}
+            \centerline{\includegraphics[scale=0.7]{tabla.jpg}}
+        \end{center}
 
         % Ejercicio 10.2
         \item[b)] $(\neg P \lor Q) → ((P \land R) ↔ ((S \land T) → (U \lor P)))$
+
+        \textsc{Solución:} La fórmula es satisfacible. El modelo $\mathcal{I}$
+        tal que $\mathcal{I}(P) = 1$, $\mathcal{I}(Q) = \mathcal{I}(R) = 
+        \mathcal{I}(S) = \mathcal{I}(T) = \mathcal{I}(U) = 0$ hace 
+        que la expresión evalúe a verdadero.
     \end{itemize}
 
     % Ejercicio 11. 
