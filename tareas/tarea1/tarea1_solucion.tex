@@ -15,6 +15,7 @@
 \usepackage{ragged2e}
 % Soporte para la imágenes.
 \usepackage{graphicx}
+\usepackage{forest,array}
 % Modificamos los márgenes del documento.
 \usepackage[lmargin=2cm,rmargin=2cm,top=2cm,bottom=2cm]{geometry}
 
@@ -37,8 +38,69 @@
     \begin{itemize}
         % Ejercicio 1.1
         \item $- ((a + b) * c) + 1$
+
+        \textsc{Solución:} Para mostrar que la expresión está bien formada,
+        daremos su respectivo árbol de derivación.
+
+        \begin{center}
+            \begin{forest}  
+                [S, for tree={parent anchor=south, child anchor=north} 
+                    [E, for tree={parent anchor=south, child anchor=north}
+                        [E 
+                            [$\rhd$ [-]] 
+                                [E 
+                                    [E 
+                                        [(] 
+                                            [E 
+                                                [E 
+                                                    [(] 
+                                                        [E 
+                                                            [E [$\text{var}$ [a]]] 
+                                                                [$\diamond$] 
+                                                                    [E [$\text{var}$ [b]]]] 
+                                                            [)]] 
+                                                        [$\diamond$ [*]] 
+                                                    [E [$\text{var}$ [c]]]] 
+                                                [)]] 
+                                    [$\diamond$ [+]] 
+                                        [E [$\text{const}$ [1]]]]]]]
+            \end{forest}
+        \end{center}
+
+        \newpage
         % Ejercicio 1.2
         \item $((p → q) \land (r → s)) \lor r$
+
+        \textsc{Solución:} Para mostrar que la expresión está bien formada, 
+        daremos su respectivo árbol de derivación.
+
+        \begin{center}
+            \begin{forest}
+                [S, for tree={parent anchor=south, child anchor=north}
+                    [E, for tree={parent anchor=south, child anchor=north}
+                        [E 
+                            [(] 
+                                [E 
+                                    [E 
+                                        [(] 
+                                            [E 
+                                                [E [$\text{var}$ [p]]] 
+                                                    [$\diamond$ [$→$]] 
+                                                        [E [$\text{var}$ [q]]]]
+                                                [)]] 
+                                        [$\diamond$ [$\land$]] 
+                                            [E 
+                                                [(] 
+                                                    [E 
+                                                        [E [$\text{var}$ [r]]] 
+                                                            [$\diamond$ [$→$]] 
+                                                                [E [$\text{var}$ [s]]]] 
+                                                        [)]]] 
+                                    [)]] 
+                            [$\diamond$ [$\lor$]] 
+                                [E [$\text{var}$ [r]]]]]
+            \end{forest}
+        \end{center}
     \end{itemize}
 
     % Ejericicio 2.
@@ -249,6 +311,11 @@
     % Ejercicio 8.
     \item Llene las partes que faltan y escriba en qué consiste la expresión 
     $E$.
+    \begin{itemize}
+        \item[a)] \;
+
+        \item[b)] 
+    \end{itemize}
 
     % Ejercicio 9.
     \item Utilizando únicamente la tabla de equivalencias dada en clase, 
@@ -339,6 +406,8 @@
     \begin{itemize}
         % Ejercicio 11.1
         \item $\Gamma = \{p → q, \; p \lor r \land s, \; q → t\}$
+
+        \textsc{Solución:} 
         % Ejercicio 11.2
         \item $\Gamma = \{p \lor q \lor r, \; \neg (r \lor \neg s), \; s ↔ t, \;
                           p → \neg t, \; q → (p \lor \neg t)\}$        
