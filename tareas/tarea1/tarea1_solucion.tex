@@ -16,6 +16,8 @@
 % Soporte para la imágenes.
 \usepackage{graphicx}
 \usepackage{forest,array}
+% Soporte para Tableaux
+\usepackage{prooftrees}
 % Modificamos los márgenes del documento.
 \usepackage[lmargin=2cm,rmargin=2cm,top=2cm,bottom=2cm]{geometry}
 
@@ -518,7 +520,21 @@
     \item Usando Tableaux, determine la correctud del siguiente argumento.
 
     \begin{center}
-        $(P → Q) → R, \; P, \; R → T \; /∴ T \lor Q$
+        $(P \lor Q) → R, \; P, \; R → T \; /∴ T \lor Q$
+    \end{center}
+
+    \textsc{Solución:} Para determinar la correctud del argumento, debemos 
+    comprobar que la siguiente fórmula es una tautología
+
+    \begin{center}
+        $(P \lor Q) → R \land P \land R → T \land \neg (T \lor Q)$
+    \end{center}
+
+    Para ello, debemos hacer el Tableaux para la negación de la fórmula 
+    anterior, es decir, 
+
+    \begin{center}
+        $(P \lor Q) → R \land P \land R → T \land \neg (T \lor Q)$
     \end{center}
 
     % Ejercicio 16.
@@ -527,6 +543,31 @@
     \begin{center}
         $p \lor (\neg p \land q) → p \lor q$
     \end{center}
+
+    \begin{proof} 
+        Debemos construir el Tableaux de la negación de la fórmula, es decir, 
+        hay que constuir el Tableaux para
+        
+        \begin{center}
+            $p \lor (\neg p \land q) \land \neg p \land \neg q$
+        \end{center}
+        
+        Así, 
+        \begin{center}
+            \begin{prooftree}{}
+                [p \lor (\neg p \land q), checked
+                [\neg p, checked
+                [\neg q, checked
+                    [p, checked, close={2,4}, just={ext. de $\beta$ en $1$}] 
+                        [\neg p \land q 
+                        [q, checked, close={3,4}, just={ext. de $\alpha$ en $4$}]]]]]
+            \end{prooftree}
+        \end{center}
+
+    Como el Tableaux es cerrado, eso significa que la fórmula es una 
+    tautología.
+    
+    \end{proof}
 \end{enumerate}
 
 \end{document}
