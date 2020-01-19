@@ -152,6 +152,7 @@
         conectivo lógico $y$. 
     \end{itemize}
 
+    \newpage
     % Ejercicio 3.
     \item De los incisos de la pregunta anterior que son proposiciones, exhiba
     una traducción al lenguaje de la lógica proposicional.
@@ -304,10 +305,76 @@
         es $t$ y su rango izquierdo es $((p \lor q) → (r → s))$.
     \end{itemize}
 
+    \newpage
     % Ejercicio 7.
     \item Para cada una de las expresiones del ejercicio anterior, construya
     los árboles de análisis sintáctico.
 
+    \begin{itemize}
+        \item[a)] $((p \land q) \lor (r → s)) → r$
+
+        \textsc{Solución:}
+        \begin{center}
+            \begin{forest}
+                [S, for tree={parent anchor=south, child anchor=north}
+                    [E, for tree={parent anchor=south, child anchor=north}
+                        [E 
+                            [(] 
+                                [E 
+                                    [E 
+                                        [(] 
+                                            [E 
+                                                [E [$\text{var}$ [p]]] 
+                                                    [$\diamond$ [$\land$]] 
+                                                        [E [$\text{var}$ [q]]]] 
+                                                [)]] 
+                                        [$\diamond$ [$\lor$]] 
+                                            [E 
+                                                [(] 
+                                                    [E 
+                                                        [E [$\text{var}$ [r]]] 
+                                                            [$\diamond$ [$→$]] 
+                                                                [E [$\text{var}$ [s]]]] 
+                                                        [)]]] 
+                                    [)]] 
+                            [$\diamond$ [$→$]] 
+                                [E [$\text{var}$ [r]]]]]
+            \end{forest}
+        \end{center}
+
+        \item[b)] $p \lor q → r → s ↔ t$
+
+        \textsc{Solución:}
+        \begin{center}
+            \begin{forest}
+                [S, for tree={parent anchor=south, child anchor=north}
+                    [E, for tree={parent anchor=south, child anchor=north}
+                        [E 
+                            [(] 
+                                [E 
+                                    [E 
+                                        [(] 
+                                            [E 
+                                                [E [$\text{var}$ [p]]] 
+                                                    [$\diamond$ [$\lor$]] 
+                                                        [E [$\text{var}$ [q]]]] 
+                                                [)]] 
+                                        [$\diamond$ [$→$]] 
+                                            [E 
+                                                [(] 
+                                                    [E 
+                                                        [E [$\text{var}$ [r]]] 
+                                                            [$\diamond$ [$→$]] 
+                                                                [E [$\text{var}$ [s]]]] 
+                                                        [)]]] 
+                                    [)]] 
+                            [$\diamond$ [$↔$]] 
+                                [E [$\text{var}$ [t]]]]]
+            \end{forest}
+        \end{center}
+    \end{itemize}
+
+    \newpage
     % Ejercicio 8.
     \item Llene las partes que faltan y escriba en qué consiste la expresión 
     $E$.
