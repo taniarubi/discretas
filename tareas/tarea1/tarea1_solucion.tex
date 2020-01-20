@@ -476,10 +476,23 @@
         % Ejercicio 11.1
         \item $\Gamma = \{p → q, \; p \lor r \land s, \; q → t\}$
 
-        \textsc{Solución:} 
+        \textsc{Solución:} El conjunto sí es satisfacible, basta considerar el 
+        modelo $\mathcal{I}$ tal que $\mathcal{I}(p) = \mathcal{I}(q) = 
+        \mathcal{I}(r) = \mathcal{I}(s) = \mathcal{I}(t) = 1$.
+
         % Ejercicio 11.2
         \item $\Gamma = \{p \lor q \lor r, \; \neg (r \lor \neg s), \; s ↔ t, \;
-                          p → \neg t, \; q → (p \lor \neg t)\}$        
+                          p → \neg t, \; q → (p \lor \neg t)\}$     
+        
+        \textsc{Solución:} El conjunto no es satisfacible. Supongamos que existe
+        una interpretación $\mathcal{I}$ que satisface a $\Gamma$. Entonces se 
+        tiene que $\mathcal{I}(\neg (r \lor \neg s)) = 1$, por lo que 
+        $\mathcal{I}(r) = 0$ e $\mathcal{I}(s) = 1$. Así $\mathcal{I}(t) = 1$ por 
+        $\mathcal{I}(s ↔ t) = 1$. Además $\mathcal{I}(p) = 0$ por 
+        $\mathcal{I}(p → \neg t) = 1$. Así, $\mathcal{I}(q) = 0$ por 
+        $\mathcal{I}(q → (p \lor \neg t)) = 1$. Pero con estos valores,
+        $\mathcal{I}(p \lor q \lor r) = 0$. Por lo tanto, nuestro conjunto no 
+        es satisfacible.
     \end{itemize}
 
     % Ejercicio 12.
