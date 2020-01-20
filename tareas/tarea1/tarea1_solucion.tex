@@ -527,15 +527,35 @@
     comprobar que la siguiente fórmula es una tautología
 
     \begin{center}
-        $(P \lor Q) → R \land P \land R → T \land \neg (T \lor Q)$
+        $(((P \lor Q) → R) \land P \land (R → T)) → (T \lor Q)$
     \end{center}
 
-    Para ello, debemos hacer el Tableaux para la negación de la fórmula 
+    Para ello, debemos constuir el Tableaux para la negación de la fórmula 
     anterior, es decir, 
 
     \begin{center}
-        $(P \lor Q) → R \land P \land R → T \land \neg (T \lor Q)$
+        $((\neg P \land Q) \lor R) \land P \land (\neg R \lor T) \land 
+        \neg T \land \neg Q$
     \end{center}
+
+    Así, 
+    \begin{center}
+        \begin{prooftree}{}
+            [(\neg P \land Q) \lor R, checked
+            [\neg R \lor T, checked
+            [P, checked
+            [\neg T, checked
+            [\neg Q
+                [\neg R, checked, just={ext. de $\beta$ en $2$}
+                    [\neg P \land Q, checked, just={ext. de $\beta$ en $1$} 
+                        [\neg P, close={3,8}, just={ext. de $\alpha$ en $7$}]]  
+                    [R, checked, close={6,7}]] 
+                [T, checked, close={4,6}]]]]]]
+        \end{prooftree}
+    \end{center}
+
+    Como el Tableaux es cerrado, eso significa que la fórmula es una tautología,
+    y por lo tanto, el argumento es correcto.
 
     % Ejercicio 16.
     \item Usando Tableaux, demuestre que la siguiente fórmula es una tautología.
@@ -559,14 +579,14 @@
                 [\neg p, checked
                 [\neg q, checked
                     [p, checked, close={2,4}, just={ext. de $\beta$ en $1$}] 
-                        [\neg p \land q 
+                        [\neg p \land q, checked 
                         [q, checked, close={3,4}, just={ext. de $\alpha$ en $4$}]]]]]
             \end{prooftree}
         \end{center}
 
     Como el Tableaux es cerrado, eso significa que la fórmula es una 
     tautología.
-    
+
     \end{proof}
 \end{enumerate}
 
