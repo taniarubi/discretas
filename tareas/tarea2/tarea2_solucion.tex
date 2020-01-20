@@ -74,34 +74,86 @@
     manera clara la traducción de los predicados que utilizarás y el Universo
     de discurso.
 
+    \textsc{Solución:} El Universo del discurso serán todas las personas,
+    mientras que los predicados a utilizar son 
+
+    \begin{itemize}
+        \item $V(x):$ $x$ es voluntario.
+        \item $A(x, y):$ $x$ ayuda a $y$.
+        \item $M(x):$ $x$ es mexicano.
+        \item $L(x):$ $x$ es militar.
+        \item $J(x):$ $x$ es japonés.
+        \item $N(x):$ $x$ es alemán.
+    \end{itemize}
+
+    Además, usaremos la constante $a:$ Armando.
+
     \begin{itemize}
         % Ejercicio 2.1
         \item[a)] Todos los voluntarios ayudan a alguien.
+
+        \textsc{Solución:} $∀x (V(x) → ∃y (A(x, y)))$
+
         % Ejercicio 2.2
         \item[b)] Armando puede ayudar únicamente a un mexicano.
+
+        \textsc{Solución:} $∀x ∀y (M(x) \land M(y) \land A(a, x) \land A(a, y) → x = y)$
+
         % Ejercicio 2.3
         \item[c)] Ningún militar puede ayudar a todas las personas.
+
+        \textsc{Solución:} $∀x (L(x) → ∃y (\neg A(x, y)))$
+
         % Ejercicio 2.4
         \item[d)] Hay un mexicano al que todos los militares y japoneses lo 
         ayudan.
+
+        \textsc{Solución:} $∃x ∀y (M(x) \land (L(y) \land J(y) → A(y, x)))$
+        
         % Ejercicio 2.5
         \item[e)] Algún mexicano ayuda a todos o a nadie.
+
+        \textsc{Solución:} $∃x (M(x) \land (∀y (A(x, y)) \lor ∀z (\neg A(x, z))))$
+
         % Ejercicio 2.6
         \item[f)] Hay algún mexicano que no puede ser ayudado por algún 
         japonés. 
+
+        \textsc{Solución:} $∃x ∃y (M(x) \land J(y) \land \neg A(y, x))$
+        
         % Ejercicio 2.7
         \item[g)] Algunos alemanes sólo ayudan a mexicanos.
+
+        \textsc{Solución:} $∃x ∀y (N(x) \land (A(x, y) → M(y)))$
+
         % Ejercicio 2.8
         \item[h)] Exactamente una persona ayuda a todos menos a sí misma.
+
+        \textsc{Sol.:} $∃x (\neg A(x, x) \land ∀y (x \neq y → A(x,y)) \land 
+        ∀w (\neg A(w, w) \land ∀z (w \neq z → A(w,z))) → x = w)$
+
         % Ejercicio 2.9
         \item[i)] Exactamente una persona sólo se ayuda a sí misma.
+
+        \textsc{Sol.:} $∃x (A(x, x) \land ∀y (x \neq y → \neg A(x, y)) \land 
+        ∀w(A(w, w) \land ∀z(w \neq z → \neg A(w, x))) → x = w)$
+
         % Ejercicio 2.10
         \item[j)] Algunos militares no ayudan a los mexicanos.
+
+        \textsc{Solución:} $∃x ∀y (L(x) \land (M(y) → \neg A(x, y)))$
+
         % Ejercicio 2.11
         \item[k)] Todos los voluntarios japoneses ayudan a algún mexicano. 
+
+        \textsc{Solución:} $∀x (V(x) \land J(x) → ∃y (M(y) \land A(x, y)))$
+
         % Ejercicio 2.12
         \item[l)] Armando ayuda a los mexicanos, por lo tanto los voluntarios
         Ayudarán a los mexicanos. 
+
+        \textsc{Solución:} $∀x (M(x) → A(a, x)) → ∀y ∀z (V(y) \land 
+        M(z) → A(y, z))$
     \end{itemize}
 
     % Ejercicio 3.
@@ -122,6 +174,7 @@
         \item La negación del inciso $c)$         
     \end{itemize}
 
+    \newpage
     Evalúa su valor de verdad con respecto a los siguientes Universos del 
     discurso. Para aquellos enunciados que sean falsos, exhibe un 
     contraejemplo.
