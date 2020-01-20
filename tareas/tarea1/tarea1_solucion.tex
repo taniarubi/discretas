@@ -502,10 +502,68 @@
         % Ejercicio 13.1
         \item $p \land (\neg r \land \neg w), \; l, \; r \land z ⊢ \neg r 
                \land (l \land z)$
+        
+        \textsc{Solución:}
+        \begin{align*}
+            1.& \; \; p \land (\neg r \land \neg w)
+            && \text{Premisa} \\ 
+            2.& \; \; l
+            && \text{Premisa} \\ 
+            3.& \; \; r \land z
+            && \text{Premisa} \\ 
+            4.& \; \; z
+            && \text{E$\land$ $3$} \\ 
+            5.& \; \; \neg r \land \neg w
+            && \text{E$\land$ $1$} \\
+            6.& \; \; \neg r
+            && \text{E$\land$ $5$} \\ 
+            7.& \; \; l \land z
+            && \text{I$\land$ $2,4$} \\ 
+            8.& \; \; \neg r \land (l \land z)
+            && \text{I$\land$ $6, 7$}
+        \end{align*}
+
         % Ejercicio 13.2
         \item $p \lor \neg(r \lor s), \; r, \; l → \neg p ⊢ \neg l$
+        
+        \textsc{Solución:}
+        \begin{align*}
+            1.& \; \; p \lor \neg(r \lor s)
+            && \text{Premisa} \\ 
+            2.& \; \; r
+            && \text{Premisa} \\ 
+            3.& \; \; l → \neg p
+            && \text{Premisa} \\ 
+            4.& \; \; r \lor s
+            && \text{I$\lor$ $2$} \\
+            5.& \; \; p
+            && \text{SD $1, 4$} \\ 
+            6.& \; \; \neg \neg p
+            && \text{RE $5$} \\ 
+            7.& \; \; \neg l
+            && \text{MT $6, 3$}
+        \end{align*}
+
         % Ejercicio 13.3
         \item $⊢(p → q) → (p \lor q → q)$
+
+        \textsc{Solución:}
+        \begin{align*}
+            1.& \; \; p → q
+            && \text{Premisa} \\
+            2.& \; \; p \lor q
+            && \text{Premisa} \\
+            3.& \; \; \neg \neg p \lor q
+            && \text{RE $2$} \\ 
+            4.& \; \; \neg p → q
+            && \text{RE $3$} \\ 
+            5.& \; \; q
+            && \text{DCS $1, 4$} \\ 
+            6.& \; \; p→ q \vdash p \lor q → q
+            && \text{MTD $1 - 5$} \\ 
+            7.& \; \; \vdash (p → q) → (p \lor q → q)
+            && \text{MTD $1 - 6$}
+        \end{align*}
     \end{itemize}
 
     % Ejercicio 14.
