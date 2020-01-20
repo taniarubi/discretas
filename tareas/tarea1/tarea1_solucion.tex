@@ -18,6 +18,8 @@
 \usepackage{forest,array}
 % Soporte para Tableaux
 \usepackage{prooftrees}
+% Soporte para el ejercicio 8.
+\usepackage{mathpartir}
 % Modificamos los márgenes del documento.
 \usepackage[lmargin=2cm,rmargin=2cm,top=2cm,bottom=2cm]{geometry}
 
@@ -381,9 +383,25 @@
     \item Llene las partes que faltan y escriba en qué consiste la expresión 
     $E$.
     \begin{itemize}
-        \item[a)] \;
+        \item[a)] \; \inferrule{p \\ \\ \\ ↔ p \lor 0}
+        {p \lor 0 \lor Q  \\ ↔ \\ ?}
 
-        \item[b)] 
+        \textsc{Solución:} Si consideramos la expresión $E = r \lor Q$, 
+        entonces, suponiendo que $p ↔ p \lor 0$, la regla de Leibniz implica
+        que $E[r ::= p \lor 0] = E[r ::= p]$; en otras palabras, obtenemos la 
+        siguiente instancia de la regla Leibniz.
+        \item[.] \; \inferrule{p \\ \\ \\ ↔ p \lor 0}
+        {p \lor 0 \lor Q  \\ ↔ \\ p \lor Q}
+
+        \item[b)] \; \inferrule{b \cdot c \\ \\ \\ =  y + w}
+        {x + y + w \\ = \\ ?}
+
+        \textsc{Solución:} Si consideramos la expresión $E = x + z$, entonces,
+        suponiendo que $b \cdot c = y + w$, la regla de Leibniz implica que 
+        $E[z ::= y + w] = E[z ::= b \cdot c]$; en otras palabras, obtenemos la 
+        siguiente instancia de la regla de Leibniz.
+        \item[.] \; \inferrule{b \cdot c \\ \\ = \\ y + w}
+        {x + y + w \\ = x + b \cdot c}
     \end{itemize}
 
     % Ejercicio 9.
@@ -526,6 +544,7 @@
         premisas si la conclusión es falsa.
     \end{itemize}
 
+    \newpage
     % Ejercicio 13.
     \item Construya las siguientes derivaciones.
 
@@ -681,6 +700,7 @@
     Como el Tableaux es cerrado, eso significa que la fórmula es una tautología,
     y por lo tanto, el argumento es correcto.
 
+    \newpage
     % Ejercicio 16.
     \item Usando Tableaux, demuestre que la siguiente fórmula es una tautología.
 

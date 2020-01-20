@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1579488530 "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea1/tarea1_solucion.tex" "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea1/tarea1_solucion.pdf" "tarea1_solucion" 1579488540
+["pdflatex"] 1579491310 "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea1/tarea1_solucion.tex" "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea1/tarea1_solucion.pdf" "tarea1_solucion" 1579491320
   "/dev/null" 1579460075 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea1/tarea1_solucion.aux" 1579488540 67 9d6fa3768167d35926fbc25a417ce799 ""
-  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea1/tarea1_solucion.tex" 1579488530 27175 d5a344b66fea3b2bcd38fc346211572b ""
+  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea1/tarea1_solucion.aux" 1579491320 67 9d6fa3768167d35926fbc25a417ce799 ""
+  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea1/tarea1_solucion.tex" 1579491310 28177 d5ddacbaeaa5127539c3b6de13912ef4 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1572595918 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm" 1572595918 3584 21b378cca2e40816b0e6d74a4dc98f04 ""
@@ -174,6 +174,7 @@
   "/usr/share/texmf-dist/tex/latex/l3kernel/l3deprecation.def" 1572595918 9892 1ec016acc4d32bf498c20738383470b5 ""
   "/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1572595918 81717 03294ce0fabc3e7b7749bf6850c22be8 ""
   "/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1572595918 678 4792914a8f45be57bb98413425e4c7af ""
+  "/usr/share/texmf-dist/tex/latex/mathpartir/mathpartir.sty" 1572570994 14401 0712448ba80da5750b26552c69bbf0c8 ""
   "/usr/share/texmf-dist/tex/latex/ms/everysel.sty" 1572595918 4623 936bfb87af7b91b6496a2317f80db16b ""
   "/usr/share/texmf-dist/tex/latex/ms/everyshi.sty" 1572595918 3878 6aa7c08ff2621006e0603349e40a30a8 ""
   "/usr/share/texmf-dist/tex/latex/multirow/multirow.sty" 1572592815 5486 a1d954b09782ba0acd8a8abfd98e1028 ""
@@ -209,11 +210,11 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1579191817 4700588 6cff29fd2f933ef89e76aa832077506f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1579191760 8044939 3a7613ff68ee56667d5e5207e9678c8c ""
   "tabla.jpg" 1579191483 8558 e8f4acf6c04bcd40c7d11af5362d9be4 ""
-  "tarea1_solucion.aux" 1579488540 67 9d6fa3768167d35926fbc25a417ce799 "pdflatex"
-  "tarea1_solucion.tex" 1579488530 27175 d5a344b66fea3b2bcd38fc346211572b ""
+  "tarea1_solucion.aux" 1579491320 67 9d6fa3768167d35926fbc25a417ce799 "pdflatex"
+  "tarea1_solucion.tex" 1579491310 28177 d5ddacbaeaa5127539c3b6de13912ef4 ""
   (generated)
-  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea1/tarea1_solucion.log"
   "tarea1_solucion.pdf"
-  "tarea1_solucion.aux"
-  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea1/tarea1_solucion.pdf"
   "tarea1_solucion.log"
+  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea1/tarea1_solucion.pdf"
+  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea1/tarea1_solucion.log"
+  "tarea1_solucion.aux"
