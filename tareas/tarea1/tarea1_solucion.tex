@@ -516,6 +516,41 @@
     en Helheim. Pero, ser gobernado por Odín, es necesario para ser un AEsir. 
     Por lo tanto, eres gobernado por Odín o procastinas en Asgard.
 
+    \begin{proof}
+        Primero, transformamos el argumento a lenguaje de lógica proposicional.
+        Asignamos las siguientes variables proposicionales:
+
+        \begin{itemize}
+            \item $p:$ Procastinas en Helheim.
+            \item $q:$ Procastinas en Asgard.
+            \item $r:$ Eres un AEsir.
+            \item $s:$ Eres gobernado por Odín.
+        \end{itemize}
+
+        Así, el argumento a verificar es: $(p \lor q) → r, \; p, \; r → s$
+        $/∴ \; s \lor q$. 
+
+        Entonces
+        \begin{align*}
+            1.& \; \; (p \lor q) → r
+            && \text{Premisa} \\ 
+            2.& \; \; p
+            && \text{Premisa} \\
+            3.& \; \; r → s
+            && \text{Premisa} \\ 
+            4.& \; \; p \lor q
+            && \text{I$\lor$ $2$} \\ 
+            5.& \; \; r
+            && \text{MP $4, 1$} \\ 
+            6.& \; \; s
+            && \text{MP $5, 3$} \\ 
+            7.& \; \; s \lor q
+            && \text{I$\lor$ $6$}
+        \end{align*}
+
+        Por lo tanto, el argumento es correcto.
+    \end{proof}
+
     % Ejercicio 15.
     \item Usando Tableaux, determine la correctud del siguiente argumento.
 
