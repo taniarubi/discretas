@@ -1,0 +1,168 @@
+\documentclass[letterpaper,11pt]{article}
+% Soporte para los acentos.
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}    
+% Idioma español.
+\usepackage[spanish,mexico, es-tabla]{babel}
+% Soporte de símbolos adicionales (matemáticas)
+\usepackage{multirow}
+\usepackage{amsmath}		
+\usepackage{amssymb}		
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage{enumerate}
+\usepackage{ragged2e}
+% Modificamos los márgenes del documento.
+\usepackage[lmargin=2cm,rmargin=2cm,top=2cm,bottom=2cm]{geometry}
+
+\title{Universidad Nacional Autónoma de México \\
+       Facultad de Ciencias \\
+       Estructuras Discretas \\ 
+       Tarea 2}
+\author{Rubí Rojas Tania Michelle \\
+        taniarubi@ciencias.unam.mx \\
+        \# cuenta: 315121719}
+\date{2 de octubre de 2017}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+    % Ejercicio 1.
+    \item Sean $f^{(1)}, g^{(2)}$ símbolos de función, $P^{(1)}$ símbolo de 
+    predicado. Clasifica las siguientes fórmulas como términos, fórmulas
+    atómicas, fórmulas cuantificadas (con cuantificadores pero con presencias
+    de variables libres) o enunciados (fórmulas con cuantificadores sin 
+    variables libres); según el caso, justifica tu respuesta.
+
+    \begin{itemize}
+        % Ejercicio 1.1
+        \item[a)] $f(g(a,b))$
+
+        \textsc{Solución:} Es un término. Como las constantes $a$ y $b$ son 
+        términos, entonces $g(a,b)$ también es un término ya que es un símbolo 
+        de función aplicado a términos. 
+
+        % Ejercicio 1.2
+        \item[b)] $\neg ∀x ∀y (P(f(x)) \land Q(x, y))$
+
+        \textsc{Solución:} Es un enunciado, ya que es una fórmula cuantificada 
+        sin variables libres.
+
+        % Ejercicio 1.3
+        \item[c)] $P(g(f(x), y))$
+
+        \textsc{Solución:} Es una fórmula atómica, ya que es un símbolo de  
+        predicado aplicado a un término.
+
+        % Ejercicio 1.4
+        \item[d)] $∃x ∀y ∃z (R(x, y, z) \land Q(x, f(y)) → P(g(x,y)))$
+
+        \textsc{Solución:} Es un enunciado, ya que es una fórmula cuantificada 
+        sin variables libres.
+
+        % Ejercicio 1.5
+        \item[e)] $∀x ∀y ∀z (P(x, y) \land R(y, z)) \lor ∃z (Q(x, y, z))$
+
+        \textsc{Solución:} Es una fórmula cuantificada, ya que las variables 
+        $x$ y $y$ aparecen como variables libres en la fórmula $∃z (Q(x, y, z))$.
+    \end{itemize}
+
+    % Ejercicio 2.
+    \item Traduce los siguientes enunciados a lógica de predicados. Indica de  
+    manera clara la traducción de los predicados que utilizarás y el Universo
+    de discurso.
+
+    \begin{itemize}
+        % Ejercicio 2.1
+        \item[a)] Todos los voluntarios ayudan a alguien.
+        % Ejercicio 2.2
+        \item[b)] Armando puede ayudar únicamente a un mexicano.
+        % Ejercicio 2.3
+        \item[c)] Ningún militar puede ayudar a todas las personas.
+        % Ejercicio 2.4
+        \item[d)] Hay un mexicano al que todos los militares y japoneses lo 
+        ayudan.
+        % Ejercicio 2.5
+        \item[e)] Algún mexicano ayuda a todos o a nadie.
+        % Ejercicio 2.6
+        \item[f)] Hay algún mexicano que no puede ser ayudado por algún 
+        japonés. 
+        % Ejercicio 2.7
+        \item[g)] Algunos alemanes sólo ayudan a mexicanos.
+        % Ejercicio 2.8
+        \item[h)] Exactamente una persona ayuda a todos menos a sí misma.
+        % Ejercicio 2.9
+        \item[i)] Exactamente una persona sólo se ayuda a sí misma.
+        % Ejercicio 2.10
+        \item[j)] Algunos militares no ayudan a los mexicanos.
+        % Ejercicio 2.11
+        \item[k)] Todos los voluntarios japoneses ayudan a algún mexicano. 
+        % Ejercicio 2.12
+        \item[l)] Armando ayuda a los mexicanos, por lo tanto los voluntarios
+        Ayudarán a los mexicanos. 
+    \end{itemize}
+
+    % Ejercicio 3.
+    \item Considera los siguientes predicados 
+
+    \begin{itemize}
+        \item $P(x):$ $x$ es un número par.
+        \item $M(x, y):$ $x$ es menor que $y$.
+        \item $G(x, y):$ la división de $x$ entre $y$ está dentro del conjunto.
+    \end{itemize}
+
+    Y los siguientes enunciados
+
+    \begin{itemize}
+        \item $∀x ∀y (M(x, y) → ∃z(M(x, z) \land M(z, y)))$
+        \item $∀x (P(x) → M(0, x))$
+        \item $∀x ∀y (x \neq 0 \land y \neq 0 → (G(x, y) \land G(y, x)))$
+        \item La negación del inciso $c)$         
+    \end{itemize}
+
+    Evalúa su valor de verdad con respecto a los siguientes Universos del 
+    discurso. Para aquellos enunciados que sean falsos, exhibe un 
+    contraejemplo.
+
+    \begin{itemize}
+        % Ejercicio 3.1
+        \item[a)] Los números naturales (el $0$ también es natural).
+        % Ejercicio 3.2
+        \item[b)] Los números reales. 
+        % Ejercicio 3.3
+        \item[c)] Los números enteros. 
+    \end{itemize}
+
+    % Ejercicio 4.
+    \item El micromundo de figuras tiene los enunciados siguientes:
+
+    \begin{itemize}
+        \item $T(x), C(x)$ y $S(x)$ tales que $x$ es triángulo, cuadrado o 
+        círculo, respectivamente.
+        \item $P(x), M(x)$ y $G(x)$ tales que $x$ es pequeño, mediano o 
+        grande, respectivamente.
+        \item $Su(x, y), N(x, y), E(x, y)$ y $O(x, y)$ para indicar que $x$ 
+        está al sur, norte, este u oeste de $y$, respectivamente.
+        \item $Co(x, y)$ y $R(x, y)$ para indicar que $x$ está en la misma 
+        columna o renglón que $y$, respectivamente.
+    \end{itemize}
+
+    Para cada una de las siguientes fórmulas, escribe su traducción al español,
+    da un micromundo no vacío donde la fórmula sea verdad y uno donde sea 
+    falsa.
+
+    \begin{itemize}
+        % Ejercicio 4.1
+        \item[a)] $∃x ∃y ∃z (T(x) \land C(y) \land S(z) \land N(x, y) \land N(y,z))$
+        % Ejercicio 4.2
+        \item[b)] $∀x (S(x) → \neg G(x)) \land ∀x (C(x) → ∃y (Co(x, y) \land T(x) \land P(x)))$
+        % Ejercicio 4.3
+        \item[c)] $∀x ∃y (R(x, y) → (M(x) \lor G(y)))$ 
+        % Ejercicio 4.4
+        \item[d)] $∃x (C(x) \land ∀y (N(y, x) → P(y) \lor S(y))) \land ∀w (C(w) → ∃y (G(y) \land E(y, w)))$
+    \end{itemize}
+\end{enumerate}
+
+\end{document}
