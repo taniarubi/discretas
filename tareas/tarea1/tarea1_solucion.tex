@@ -504,8 +504,26 @@
         % Ejercicio 12.1
         \item $p → q, \; p \lor r, \; \neg (r \land s), \; /∴ (p → q) → 
                (q \lor \neg s)$
+
+        \textsc{Solución:} Sí es correcto el argumento. Para que una 
+        interpretación $\mathcal{I}$ haga falsa a la conclusión, debe de 
+        cumplir que $\mathcal{I}(p) = \mathcal{I}(q) = 0$ e $\mathcal{I}(s) = 1$.
+        Entonces, para que $\mathcal{I}$ haga verdadera a $p \lor r$, se necesita
+        que $\mathcal{I}(r) = 1$. Pero entonces, $\neg (r \land s)$ evalúa a 
+        falso. Así, toda interpretación que haga falsa a la conclusión debe de  
+        hacer falsa a al menos una de las premisas. 
+
         % Ejercicio 12.2
         \item $p \lor q, \; \neg (p \land r), \; \neg q \; /∴ r → s$
+        
+        \textsc{Solución:} Sí es correcto el argumento. Cualquier interpretación
+        $\mathcal{I}$ que haga falsa a la conclusión debe de cumplir que 
+        $\mathcal{I}(r) = 1$ e $\mathcal{I}(s) = 0$. En este caso, para que 
+        $\neg (p \land r)$ evalúe a veradero, se necesita que $\mathcal{I}(p) = 0$.
+        Además, para que $p \lor q$ evalúe a verdadero, tiene que suceder que 
+        $\mathcal{I}(q) = 1$. Sin embargo, esto último implica que $\neg q$ 
+        evalúa a falso, y por lo tanto, es imposible hacer verdaderas a todas las 
+        premisas si la conclusión es falsa.
     \end{itemize}
 
     % Ejercicio 13.
