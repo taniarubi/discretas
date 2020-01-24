@@ -13,6 +13,8 @@
 \usepackage{latexsym}
 \usepackage{enumerate}
 \usepackage{ragged2e}
+% Soporte para la imágenes.
+\usepackage{graphicx}
 % Modificamos los márgenes del documento.
 \usepackage[lmargin=2cm,rmargin=2cm,top=2cm,bottom=2cm]{geometry}
 
@@ -288,14 +290,49 @@
 
     \begin{itemize}
         % Ejercicio 4.1
-        \item[a)] $∃x ∃y ∃z (T(x) \land C(y) \land S(z) \land N(x, y) \land N(y,z))$
+        \item[a)] $∃x ∃y ∃z (T(x) \land C(y) \land S(z) \land N(x, y) \land 
+                  N(y,z))$
+
+        \textsc{Solución:} Existe un triángulo, un cuadrado y un círculo tales 
+        que el triángulo se encuentra al norte del cuadrado y el cuadrado se 
+        encuentra al norte del círculo.
+
         % Ejercicio 4.2
-        \item[b)] $∀x (S(x) → \neg G(x)) \land ∀x (C(x) → ∃y (Co(x, y) \land T(x) \land P(x)))$
+        \item[b)] $∀x (S(x) → \neg G(x)) \land ∀x (C(x) → ∃y (Co(x, y) \land 
+                  T(x) \land P(x)))$
+
+        \textsc{Solución:} Cualquier círculo no es grande y para todo cuadrado  
+        existe un triángulo pequeño que se encuentra en la misma columna.
+
         % Ejercicio 4.3
         \item[c)] $∀x ∃y (R(x, y) → (M(x) \lor G(y)))$ 
+
+        \textsc{Solución:} Para cualquier figura $x$ existe otra figura $y$ tal 
+        que si $x$ está en el mismo renglón que $y$, entonces $x$ es mediana 
+        o $y$ es grande. 
+
         % Ejercicio 4.4
-        \item[d)] $∃x (C(x) \land ∀y (N(y, x) → P(y) \lor S(y))) \land ∀w (C(w) → ∃y (G(y) \land E(y, w)))$
+        \item[d)] $∃x (C(x) \land ∀y (N(y, x) → P(y) \lor S(y))) \land 
+                  ∀w (C(w) → ∃y (G(y) \land E(y, w)))$
+
+        \textsc{Solución:} Hay un cuadrado tal que para cualquier figura que se 
+        encuentre al norte se tiene que esa figura es pequeña o es un círculo.
+        Además, para cualquier cuadrado $w$ existe una figura grande que se 
+        encuentra al este de $w$.
     \end{itemize}
+
+    El siguiente micromundo modela a todas las fórmulas fórmulas cuando son 
+    verdaderas:
+
+    \begin{center}
+        \centerline{\includegraphics[scale=0.7]{modelo1.jpg}}
+    \end{center}
+
+    Y el siguiente micromundo modela a todas las fórmulas cuando son falsas:
+
+    \begin{center}
+        \centerline{\includegraphics[scale=0.7]{modelo2.jpg}}
+    \end{center}
 \end{enumerate}
 
 \end{document}
