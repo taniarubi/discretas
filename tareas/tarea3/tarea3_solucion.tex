@@ -251,6 +251,46 @@
     Demuestre que $r_{n} = \frac{1}{3}(10 \cdot 4^{n - 1} - 7)$ para cada 
     $n \in ℕ^{\times}$. 
 
+    \begin{proof}
+        Inducción sobre $n$.
+
+        \begin{itemize}
+            \item Base de inducción. \\ 
+            $n = 1$. Este caso se cumple ya que $r_{i} = 1 = \frac{1}{3}(3) =
+            \frac{1}{3}(10 ⋅ 1 - 7) = \frac{1}{3}(10 ⋅ 4^{0} - 7) = 
+            \frac{1}{3}(10 ⋅ 4 ^{1-1} - 7)$
+
+            \item Hipótesis de inducción. Supongamos que el resultado es válido 
+            para $n + 1$, es decir, supongamos que se cumple 
+            $r_{n} = \frac{1}{3}(10 ⋅ 4^{n - 1} - 7)$.
+
+            \item Paso inductivo. \\ 
+            Tenemos que demostrar que la fórmula es válida para $n + 1$, es
+            decir, que se cumple $r_{r+1} = \frac{1}{3}(10 ⋅ 4^{n} - 7)$.
+            
+            Entonces 
+            \begin{align*}
+                r_{n+1} 
+                &= 4r_{n} + 7
+                && \text{definición recursiva de $r_{n+1}$} \\ 
+                &= 4(\frac{1}{3}(10 ⋅ 4^{n-1} - 7)) + 7
+                && \text{definición recursiva de $r_{n}$} \\ 
+                &= \frac{1}{3}(10 ⋅ 4^{n-1} ⋅ 4 - 7 ⋅ 4) + 7
+                && \text{conmutatividad y simplificando} \\ 
+                &= \frac{1}{3}(10 ⋅ 4^{n} - 7 (1+3)) + 7
+                && \text{simplificando y aplicando $4 = 3 + 1$} \\
+                &= \frac{1}{3}(10 ⋅ 4^{n} - 7 + 21) + 7 
+                && \text{simplificando} \\
+                &= \frac{1}{3}(10 ⋅ 4^{n} - 7) - \frac{1}{3} ⋅ 21 + 7
+                && \text{sacando al $21$} \\ 
+                &= \frac{1}{3}(10 ⋅ 4^{n} - 7) - 7 + 7
+                && \text{resolviendo multiplicación} \\ 
+                &= \frac{1}{3}(10 ⋅ 4^{n} - 7)
+                && \text{simplificando}
+            \end{align*}
+        \end{itemize}
+    \end{proof}
+
     % Ejercicio 5.
     \item Sean $\{b_{i}\}_{i \in ℕ}$ la sucesión definida por $d_{0} = 2, 
     d_{1} = 3, $ y $d_{n} = d_{n-1} \cdot d_{n-2}$ para cada $n \in ℕ$ tal que 
