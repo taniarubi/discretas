@@ -482,13 +482,46 @@
     \begin{itemize}
         % Ejercicio 9.1
         \item[a)] ¿Qué hace la función $mist$?
+
+        \textsc{Solución:} La función $mist$ recibe dos listas $xs$ y $ys$, y 
+        concatena la reversa de $xs$ con $ys$.
+
         \item[b)] Muestre que $rev \; xs = mist \; xs \; []$, con $rev$ la 
         operación reversa sobre cadenas definidas cómo sigue: 
         \begin{center}
             $rev \; [] = []$
 
-            $rev \; (a : ls) = rev \; ls\_[a]$
+            $rev \; (a : xs) = rev \; xs\_[a]$
         \end{center}
+
+        \begin{proof}
+            Inducción estructural sobre $xs$.
+
+            \begin{itemize}
+                \item Base de inducción. \\ 
+                $xs = []$. Este caso se cumple ya que $rev \; [] = [] =
+                mist \; [] \; []$.
+
+                \item Hipótesis de inducción. Supongamos que se cumple 
+                $rev \; xs = mist \; xs \; []$.
+
+                \item Tenemos que demostrar que para cualquier $a$, se cumple
+                $rev \; (a:xs) = mist \; (a:xs) \; []$.
+
+                Entonces 
+                \begin{align*}
+                    rev \; (a:xs)
+                    &= rev \; xs\_[a]
+                    && \text{definición recursiva de $rev$} \\
+                    &= (mist \; xs \; [])\_[a]
+                    && \text{por H.I.} \\ 
+                    &= mist \; xs \; (a:[]) 
+                    && \text{propiedades de $[]$} \\ 
+                    &= mist \; (a: xs) \; []
+                    && \text{definición recursiva de $mist$}
+                \end{align*}
+            \end{itemize}
+        \end{proof}
     \end{itemize}
 
     % Ejercicio 10.
