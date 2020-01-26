@@ -424,11 +424,51 @@
     \begin{itemize}
         % Ejercicio 8.1
         \item[a)] De una implementación recursiva para $snoc$.
+
+        \textsc{Solución:} Definimos la función $snoc$ de la siguiente forma:
+        \begin{center}
+            $snoc \; c \; [] = [c]$
+
+            $snoc \; c \; (a:xs) = (a: snoc \; c \; xs)$
+        \end{center}
+
         % Ejercicio 8.2
         \item[b)] Demuestre, usando la definición recursiva, que:
         \begin{center}
             $snoc \; \; c \; (xs\_ys) = xs\_ (snoc \; \; c \; ys)$
         \end{center} 
+
+        \begin{proof}
+            Inducción estructural sobre $xs$.
+
+            \begin{itemize}
+                \item Base de inducción. \\ 
+                $xs = []$. Este caso se cumple ya que 
+                $snoc \; c \; ([]\_ys) = snoc \; c \; ys = 
+                [] \_ (snoc \; c \; ys)$
+
+                \item Hipótesis de inducción. Supongamos que se cumple
+                $snoc \; \; c \; (xs\_ys) = xs\_ (snoc \; \; c \; ys)$.
+
+                \item Paso inductivo. \\ 
+                Debemos demostrar que para cualquier $a$, se cumple 
+                que $snoc \; c \; ((a:xs)\_ys) = 
+                (a:xs)\_ (snoc \; \; c \; ys)$.
+
+                Entonces 
+                \begin{align*}
+                    snoc \; c \; ((a:xs)\_ys)
+                    &= snoc \; c \; (a:(xs\_ys))
+                    && \text{asociatividad de la concatenación} \\
+                    &= (a: snoc \; c \; (xs\_ys)) 
+                    && \text{definición recursiva de $snoc$} \\ 
+                    &= (a: xs\_(snoc \; c \; ys))
+                    && \text{por H.I.} \\ 
+                    &= (a : xs)\_(snoc \; c \; ys)
+                    && \text{asociatividad de la concatenación} 
+                \end{align*}
+            \end{itemize}
+        \end{proof}
     \end{itemize}
 
     % Ejercicio 9.
