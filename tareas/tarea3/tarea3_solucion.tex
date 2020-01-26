@@ -205,6 +205,46 @@
 
     Para cada $n \in ℕ$ tal que $n \geq 2$.
 
+    \begin{proof}
+        Inducción sobre $n$.
+
+        \begin{itemize}
+            \item Base de inducción. \\ 
+            $n = 2$. Este caso se cumple ya que $∏_{i=2}^{2}(1 - \frac{1}{i^{2}})
+            = 1 - \frac{1}{2^{2}} = (1 - \frac{1}{4}) = \frac{3}{4} = 
+            \frac{2+1}{2(2)}$
+
+            \item Hipótesis de inducción. Supongamos que el resultado es válido 
+            para $n \geq 2$, es decir, supongamos que se cumple $∏_{i=2}^{n}
+            (1 - \frac{1}{i^{2}}) = \frac{n+1}{2n}$
+
+            \item Paso inductivo. \\ 
+            Tenemos que demostrar que la fórmula es válida para $n + 1$, es 
+            decir, que se cumple $∏_{i=2}^{n+1} = \frac{(n+1)+1}{2(n+1)} =
+            \frac{n+2}{2n+2}$.
+
+            Entonces 
+            \begin{align*}
+                ∏_{i=2}^{n+1} 
+                &= \bigg(∏_{i=2}^{n} \bigg(1-\frac{1}{i^{2}}\bigg) \bigg) ⋅
+                \bigg(1 - \frac{1}{(n+1)^{2}}\bigg) \\
+                &= \bigg(\frac{n+1}{2n}\bigg) ⋅ \bigg(1 - \frac{1}{(n+1)^{2}}\bigg)
+                && \text{por H.I.} \\ 
+                &= \bigg(\frac{n+1}{2n}\bigg) ⋅ 
+                \bigg(\frac{n^{2}+2n}{(n+1)^{2}}\bigg)
+                && \text{resolviendo resta} \\ 
+                &= \frac{(n+1)(n^{2}+2n)}{2n(n+1)^{2}}
+                && \text{resolviendo multiplicación} \\ 
+                &= \frac{n^{2}+2n}{2n(n+1)}
+                && \text{eliminando el término $(n+1)$} \\
+                &= \frac{n(n+2)}{2n(n+1)}
+                && \text{factorizando} \\ 
+                &= \frac{n+2}{2n+2}
+                && \text{eliminando el término $n$ y simplificando}
+            \end{align*}
+        \end{itemize}
+    \end{proof}
+
     % Ejercicio 4.
     \item Sean $\{r_{i}\}_{i \in ℕ^{\times}}$ la sucesión definida por 
     $r_{1} = 1$, y $r_{n + 1} = 4r_{n} + 7$ para cada $n \in ℕ$. 
