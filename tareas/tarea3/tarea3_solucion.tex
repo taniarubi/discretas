@@ -533,10 +533,50 @@
     \lor \neg \neg p$.
     \begin{itemize}
         % Ejercicio 10.1
-        \item Defina recursivamente una función dual tal que $dual(A) = A_{D}$.
+        \item[a)] Defina recursivamente una función dual tal que 
+        $dual(A) = A_{D}$.
+
+        \textsc{Solución:} Definimos la función $dual(A)$ de la siguiente forma 
+        \begin{itemize}
+            \item $dual(p) = \neg p$
+            \item $dual(true) = false$
+            \item $dual(false) = true$
+            \item $dual(¬A) = ¬dual(A)$
+            \item $dual(A \land B) = dual(A) \lor dual(B)$
+            \item $dual(A \lor B) = dual(A) \land dual(B)$. 
+        \end{itemize}
+
         % Ejercicio 10.2
-        \item Muestre que $\neg A \equiv A_{D}$ mediante inducción sobre 
+        \item[b)] Muestre que $¬A ≡ A_{D}$ mediante inducción sobre 
         fórmulas.
+
+        \begin{proof}
+            Inducción sobre las fórmulas.
+
+            \begin{itemize}
+                \item Base de inducción. \\ 
+                $A$ es atómica (no tiene operadores). Este caso se cumple, ya 
+                que, por la reflexividad de $≡$, tenemos que 
+                \begin{itemize}
+                    \item $A = p ⇒ dual(p) = ¬p ≡ ¬p$
+                    \item $A = true ⇒ dual(true) = false ≡ false$
+                    \item $A = false ⇒ dual(false) = true ≡ true$
+                \end{itemize}
+
+                \item Hipótesis de inducción. Supongamos que $¬A ≡ A_{D}$ y 
+                $¬B ≡ B_{D}$.
+
+                \item Paso inductivo. \\ 
+                Tenemos que 
+                \begin{itemize}
+                    \item $A = ¬A ⇒ dual(¬A) = ¬dual(A) ≡ ¬¬A$ 
+                    \item $A = A \land B ⇒ dual(A \land B) = 
+                    dual(A) \lor dual(B) ≡ ¬A \lor ¬B ≡ ¬(A \land B)$
+                    \item $A = A \lor B ⇒ dual(A \lor B) = 
+                    dual(A) \land dual(B) ≡ ¬A \land ¬B ≡ ¬(A \lor B)$
+                \end{itemize}
+            \end{itemize}
+        \end{proof}
     \end{itemize}
 
     % Ejercicio 11.
