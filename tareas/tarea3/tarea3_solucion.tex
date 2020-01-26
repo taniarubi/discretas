@@ -585,19 +585,78 @@
         % Ejercicio 11.1
         \item Defina recursivamente una función $hmi(T)$ que devuelve la hoja
         más a la izquierda en un árbol binario.
+
+        \textsc{Solución:} Definimos recursivamente la función $hmi(T)$ de la 
+        siguiente forma (suponiendo que nuestro árbol es diferente de $void$):
+        \begin{itemize}
+            \item $hmi(tree(void, c, void)) = c$
+            \item $hmi(tree(T_{1}, c, T_{2})) = hmi(T_{{1}})$
+            \item $hmi(tree(T_{1}, c, void)) = hmi(T_{{1}})$
+            \item $hmi(tree(void, c, T_{2})) = hmi(T_{2})$
+        \end{itemize}
+
         % Ejercicio 11.2
         \item La distancia entre la raíz $r$ de un árbol binario T hacía algún
         otro nodo $p$ es el número de aristas (líneas) que hay entre ambos nodos
         y la altura o profundidad de un árbol se define como la máxima distancia
         entre la raíz y alguna hoja más $1$. Demuestre que el número máximo de 
         hojas en un árbol de altura $n$ es $2^{n - 1}$.
+
+        \begin{proof}
+            Inducción estructural sobre $T$.
+
+            \begin{itemize}
+                \item Base de inducción. \\ 
+                $T = void$. Este caso se cumple ya que la altura y el número de 
+                hojas de $T$ son iguales a $0$. Así, $0 < \frac{1}{2} = 2^{-1} = 
+                2^{0-1}$
+
+                \item Hipótesis de inducción. Si $T$ es un árbol de altura 
+                $n_{i}$, entonces tiene a lo más $2^{n_{i}-1}$ hojas, donde 
+                $i \in \{1,2\}$.
+
+                \item Paso inductivo. \\ 
+                Sea $T = tree(T_{1}, c, T_{2})$. Notemos que la altura de $T$ es 
+                igual a $1 + max \{n_{1}, n_{2}\}$, por lo que debemos demostrar 
+                que el número de hojas de $T$ es a lo más 
+                $2^{1 + max\{n_{1}, n_{2}\}} = 2^{max\{n_{1}, n_{2}\}}$.
+
+                Como el número de hojas de $T$ es el número de hojas de $T_{1}$
+                más el número de hojas de $T_{2}$, entonces podemos definir 
+                recursivamente una función $nh$ que calcule el número de hojas de  
+                $T$. Así, 
+                \begin{align*}
+                    nh(T) 
+                    &= nh(T_{1}) + nh(T_{2})
+                    && \text{definición recursiva de $nh$} \\ 
+                    &\leq 2^{n_{1}-1} + 2^{n_{2}-1}
+                    && \text{por H.I.} \\
+                    &\leq 2^{max\{n_{1}, n_{2}\}-1} + 2^{max\{n_{1}, n_{2}\}-1}
+                    && \text{ya que $n_{i} = max\{n_{1}, n_{2}\}$} \\ 
+                    &= 2 ⋅ 2^{max\{n_{1}, n_{2}\}-1}
+                    && \text{aritmética} \\ 
+                    &= 2^{max\{n_{1}, n_{2}\}-1+1}
+                    && \text{leyes de exponentes} \\ 
+                    &= 2^{max\{n_{1}, n_{2}\}}
+                    && \text{simplificando}
+                \end{align*}
+            \end{itemize}
+        \end{proof}
         % Ejercicio 11.3
         \item De una definición recursiva que devuelva en una lista el recorrido
         post-orden de los árboles binarios. Si se tiene el siguiente árbol T, 
         el resultado del recorrido es el siguiente:
         \begin{center}
             \centerline{\includegraphics[scale=0.7]{recorrido.png}}
-        \end{center}    
+        \end{center} 
+        
+        \textsc{Solución:} Definimos recursivamente la función $post-order$ de
+        la siguiente forma 
+        \begin{itemize}
+            \item $post-order(void) = []$
+            \item $post-order(tree(T_{1}, c, T_{2})) = 
+            post-order(T_{1})\_post-order(T_{2})\_[c]$
+        \end{itemize}
     \end{itemize}
 \end{enumerate}
 \end{document}
