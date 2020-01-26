@@ -369,7 +369,6 @@
                 &= (n + 1) (n + 2)
                 && \text{factorizando}
             \end{align*}
-
         \end{itemize}
     \end{proof}
 
@@ -379,6 +378,42 @@
     abbbba, holaaloh$. Defina al conjunto de las cadenas palíndromas 
     recursivamente, y demuestre mediante inducción estructural, que todas las 
     cadenas palíndromas definidas tienen un número par de símbolos. 
+
+    \begin{proof}
+        Sea $∑$ el alfabeto sobre el cual construiremos a los palíndromos. 
+        Definimos al conjunto $P$ de las cadenas palíndromas de la siguiente 
+        forma
+
+        \begin{itemize}
+            \item[i)] Para cada $a \in ∑$,  $aa^{R} \in P$.
+            \item[ii)] Si $v$ y $w$ son cadenas tales que $vv^{R}$ y $ww^{R}$
+            son elementos de $P$, entonces también $wvv^{R}w^{R}$ lo es.
+            \item[iii)] Sólo las cadenas obtenidas con las reglas $i)$ y $ii)$
+            son elementos de $P$.
+        \end{itemize}
+
+        Ahoram demostraremos que todos los elementos del conjunto $P$ tienen un 
+        número par de símbolos, utilizando inducción estructural.
+
+        \begin{itemize}
+            \item Base de inducción. \\ 
+            Cualquier cadena en $P$ construida con la regla $i)$ es de la forma 
+            $aa^{R}$ para algún símbolo en $∑$, por lo que tiene exactamente dos 
+            elementos.
+
+            \item Hipótesis de inducción. Supongamos que $uu^{R}$ y $vv^{R}$ son 
+            cadenas en $P$, y que ambas tienen un número par de símbolos.
+
+            \item Paso inductivo. \\ 
+            Demostraremos que la cadena $uvv^{R}u^{R}$ se puede obtener con la 
+            regla $ii)$ a partir de las cadenas $u$ y $v$, que tiene un número 
+            par de símbolos. Como el número de símbolos $uvv^{R}u^{R}$ es la 
+            suma del número de símbolos en $uu^{R}$ y $vv^{R}$, por la hipótesis
+            tenemos que éstas cadenas tienen longitud par; y como la suma de un 
+            par con otro par es un par, podemos concluir que el resultado 
+            deseado.
+        \end{itemize}
+    \end{proof}
 
     % Ejercicio 8.
     \item La función $snoc$ en listas se define como sigue:
