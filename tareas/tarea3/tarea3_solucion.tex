@@ -84,10 +84,9 @@
                 $∑_{i=0}^{0} \frac{0}{2^{0}} = \frac{0}{1} = 0 =
                 2 - 2 = 2 - \frac{2}{1}= 2 - \frac{0+2}{2^{0}}$
 
-                \item Hipótesis de inducción. \\ 
-                Supongamos que el resultado es válido para $n \geq 0$, es decir, 
-                supongamos que se cumple $∑_{i=0}^{n}\frac{i}{2^{i}} = 
-                2 - \frac{n + 2}{2^{n}}$.
+                \item Hipótesis de inducción. Supongamos que el resultado es 
+                válido para $n \geq 0$, es decir, supongamos que se cumple 
+                $∑_{i=0}^{n}\frac{i}{2^{i}} = 2 - \frac{n + 2}{2^{n}}$.
 
                 \item Paso inductivo. \\ 
                 Tenemos que demostrar que la fórmula es válida para $n + 1$, es 
@@ -120,9 +119,81 @@
     de $n \in ℕ$ especificados.
     \begin{itemize}
         % Ejercicio 2.1
-        \item $(1 + \frac{1}{n})^{n} < n$ para cada $n \in ℕ$ tal que $n \geq 3$
+        \item[a)] $(1 + \frac{1}{n})^{n} < n$ para cada $n \in ℕ$ tal que 
+        $n \geq 3$
+
+        \begin{proof}
+            Inducción sobre $n$.
+            \begin{itemize}
+                \item Base de inducción. \\
+                $n = 3$. Este caso se cumple ya que 
+                $(1 + \frac{1}{3})^{3} = (\frac{4}{3})^{3} = \frac{64}{27} < 3$.
+
+                \item Hipótesis de inducción. Supongamos que el resultado es 
+                válido para $n \geq 3$, es decir, supongamos que se cumple 
+                $(1 + \frac{1}{n})^{n} < n$.
+
+                \item Paso inductivo. \\ 
+                Tenemos que demostrar que la fórmula se cumple para $n + 1$, es 
+                decir, que se cumple $(1 + \frac{1}{n+1})^{n+1} < n+1$.
+                
+                Sabemos que, por propiedades en los números reales, se cumple 
+                $n < n+1 ⇒ \frac{1}{n+1} < \frac{1}{n}$, y por lo tanto, 
+                $1 + \frac{1}{n+1} < 1 + \frac{1}{n}$. Además, si $a$ y $b$
+                son reales, se tiene que $a < b ⇒ a^{n} < b^{n}, \; n \in ℕ$.
+                Podemos utilizar este resultado con la desigualdad 
+                $1 + \frac{1}{n+1} < 1 + \frac{1}{n}$, y desarrollar para  
+                utilizar nuestra hipótesis.
+                
+                Entonces 
+                \begin{align*}
+                    \bigg(1 + \frac{1}{n + 1}\bigg )^{n+1} 
+                    &< \bigg (1 + \frac{1}{n} \bigg)^{n+1}
+                    && \text{por la observación anterior} \\ 
+                    &= \bigg (1 + \frac{1}{n} \bigg)^{n} 
+                    \bigg(1 + \frac{1}{n} \bigg) 
+                    && \text{descomponiendo la expresión anterior} \\
+                    &< n (1 + \frac{1}{n})
+                    && \text{por H.I.} \\ 
+                    &= n + 1
+                    && \text{simplificando}
+                \end{align*}
+            \end{itemize}
+        \end{proof}
+
         % Ejercicio 2.2
-        \item $7n < 2^{n}$ para cada $n \in ℕ$ tal que $n \geq 6$
+        \item[b)] $7n < 2^{n}$ para cada $n \in ℕ$ tal que $n \geq 6$
+        \begin{proof}
+            Inducción sobre $n$.
+
+            \begin{itemize}
+                \item Base de inducción. \\ 
+                $n = 6$. Este caso se cumple ya que $7(6) = 42 < 64 = 2^{6}$.
+
+                \item Hipótesis de inducción. Supongamos que el resultado es 
+                válido para $n \geq 6$, es decir, supongamos que se cumple 
+                $7n < 2^{n}$.
+
+                \item Paso inductivo. \\ 
+                Tenemos que demostrar que la fórmula es válida para $n + 1$, es 
+                decir, que se cumple $7(n+1) < 2^{n+1}$.
+
+                Entonces 
+                \begin{align*}
+                    7(n + 1)
+                    &= 7n + 7
+                    && \text{simplificando} \\ 
+                    &< 2^{n} + 7
+                    && \text{por H.I.} \\ 
+                    &< 2^{n} + 2^{n}
+                    && \text{ya que $7 < 2^{n}$ con $n \geq 6$} \\ 
+                    &= 2 \cdot 2^{n}
+                    && \text{simplificando} \\ 
+                    &= 2^{n+1}
+                    && \text{simplificando}
+                \end{align*}
+            \end{itemize}
+        \end{proof}
     \end{itemize}
 
     % Ejercicio 3.

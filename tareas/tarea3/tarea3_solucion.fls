@@ -152,6 +152,10 @@ INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
 OUTPUT /home/taniarubi/Documents/fciencias/discretas/tareas/tarea3/tarea3_solucion.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy5.tfm
 INPUT /home/taniarubi/Documents/fciencias/discretas/tareas/tarea3/recorrido.png
 INPUT /home/taniarubi/Documents/fciencias/discretas/tareas/tarea3/recorrido.png
 INPUT /home/taniarubi/Documents/fciencias/discretas/tareas/tarea3/recorrido.png
