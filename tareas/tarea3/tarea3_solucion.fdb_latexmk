@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1580016508 "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea3/tarea3_solucion.tex" "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea3/tarea3_solucion.pdf" "tarea3_solucion" 1580016508
-  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea3/tarea3_solucion.aux" 1580016508 67 9d6fa3768167d35926fbc25a417ce799 ""
-  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea3/tarea3_solucion.tex" 1580016508 17426 b5cfa26219b560ef911c89366dede8b1 ""
+["pdflatex"] 1580017453 "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea3/tarea3_solucion.tex" "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea3/tarea3_solucion.pdf" "tarea3_solucion" 1580017453
+  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea3/tarea3_solucion.aux" 1580017453 67 9d6fa3768167d35926fbc25a417ce799 ""
+  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea3/tarea3_solucion.tex" 1580017453 18640 d52c7b8d6f6fcfdc579a59b8f2dd55bf ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1572595918 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm" 1572595918 3584 291a5713401683441e0a8c8f4417b17b ""
@@ -109,11 +109,11 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1579191817 4700588 6cff29fd2f933ef89e76aa832077506f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1579191760 8044939 3a7613ff68ee56667d5e5207e9678c8c ""
   "recorrido.png" 1579986393 47590 55711eccc8c3dc91276d8f7f59b077d9 ""
-  "tarea3_solucion.aux" 1580016508 67 9d6fa3768167d35926fbc25a417ce799 "pdflatex"
-  "tarea3_solucion.tex" 1580016508 17426 b5cfa26219b560ef911c89366dede8b1 ""
+  "tarea3_solucion.aux" 1580017453 67 9d6fa3768167d35926fbc25a417ce799 "pdflatex"
+  "tarea3_solucion.tex" 1580017453 18640 d52c7b8d6f6fcfdc579a59b8f2dd55bf ""
   (generated)
   "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea3/tarea3_solucion.pdf"
-  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea3/tarea3_solucion.log"
   "tarea3_solucion.aux"
-  "tarea3_solucion.log"
+  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea3/tarea3_solucion.log"
   "tarea3_solucion.pdf"
+  "tarea3_solucion.log"

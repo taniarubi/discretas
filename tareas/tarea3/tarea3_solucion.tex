@@ -340,6 +340,39 @@
     ⋯ + 2n$. Defina una implementación recursiva llamada $f(n)$ para la función 
     $spar(n)$. Demuestre que $f(n) = n(n + 1)$.
 
+    \begin{proof}
+        Definimos la función como $f(0) = 0, f(n+1) = f(n) + 2(n+1)$. 
+        Demostraremos, por inducción sobre $n$, que $f(n) = n(n + 1)$.
+
+        \begin{itemize}
+            \item Base de inducción. \\ 
+            $n = 0$. Este caso se cumple ya que $f(0) = 0 = 0(1) =0(0 + 1)$.
+
+            \item Hipótesis de inducción. Supongamos que el resultado es válido
+            para $n$, es decir, supongamos que se cumple $f(n) = n(n + 1)$.
+
+            \item Paso inductivo. \\ 
+            Tenemos que demostrar que la fórmula es válida para $n + 1$, es decir,
+            que se cumple $f(n + 1) = (n + 1)(n + 2)$.
+
+            Entonces 
+            \begin{align*}
+                f(n + 1) 
+                &= f(n) + 2(n + 1)
+                && \text{definición recursiva de $f(n+1)$} \\ 
+                &= n(n + 1) + 2(n + 1)
+                && \text{por H.I.} \\ 
+                &= n^{2} + n + 2n + 2
+                && \text{simplificando} \\ 
+                &= n^{2} + 3n + 2
+                && \text{agrupando términos semejantes} \\ 
+                &= (n + 1) (n + 2)
+                && \text{factorizando}
+            \end{align*}
+
+        \end{itemize}
+    \end{proof}
+
     % Ejercicio 7.
     \item Una cadena de caracteres es palíndroma si es de la forma $ww^{R}$ 
     donde $w^{R}$ es $w$ escrita de atrás hacia adelante, por ejemplo, $0110,
