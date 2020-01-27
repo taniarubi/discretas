@@ -1,0 +1,179 @@
+\documentclass[letterpaper,11pt]{article}
+% Soporte para los acentos.
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}    
+% Idioma español.
+\usepackage[spanish,mexico, es-tabla]{babel}
+% Soporte de símbolos adicionales (matemáticas)
+\usepackage{multirow}
+\usepackage{amsmath}		
+\usepackage{amssymb}		
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage{enumerate}
+\usepackage{ragged2e}
+% Modificamos los márgenes del documento.
+\usepackage[lmargin=2cm,rmargin=2cm,top=2cm,bottom=2cm]{geometry}
+
+\title{Universidad Nacional Autónoma de México \\
+       Facultad de Ciencias \\
+       Estructuras Discretas \\ 
+       Tarea 4}
+\author{Rubí Rojas Tania Michelle \\
+        taniarubi@ciencias.unam.mx \\
+        \# cuenta: 315121719}
+\date{4 de diciembre de 2017}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+    % Ejercicio 1.
+    \item Mostrar que la composición de relaciones es asociativa, es decir, si
+    $R, S$ y $T$ son relaciones binarias, entonces
+
+    \begin{center}
+        $R ∘ (S ∘ T) = (R ∘ S) ∘ T$
+    \end{center}
+
+    \begin{proof} .
+        \begin{itemize}
+            \item[$⊆$] Supongamos que $(a, b) \in R ∘ (S ∘ T)$. Entonces existe 
+            $c \in A$ tal que $(a, c) \in R$ y $(c, b) \in (S ∘ T)$. Por 
+            definición, existe $d \in A$ tal que $(c,d) \in S$ y 
+            $(d, b) \in T$. Como $(a, c) \in R$ y $(c,d) \in S$, entonces 
+            $(a, d) \in R ∘ S$. Además, $(d, b) \in T$ por lo que 
+            $(a, b) \in (R ∘ S) ∘ T$.
+            
+            \item[$⊇$] Supongamos que $(a,b) \in (R ∘ S) ∘ T$. Entonces, existe
+            $c \in A$ tal que $(a,c) \in (R ∘ S)$ y $(c,b) \in T$. Por definición,
+            existe $d \in A$ tal que $(a, d) \in R$ y $(d, c) \in S$. Como $
+            (d,c) \in S$ y $(c,b) \in T$, entonces tenemos que $(d, b) \in S ∘ T$.
+            Además, $(a, d) \in R$, por lo que $(a, b) \in R ∘ (S ∘ T)$.  
+        \end{itemize}
+    \end{proof}
+
+    % Ejercicio 2.
+    \item Sean $A = \{0, 1, 2, 3\}$, $R = \{(a,b) \; | \; a+1\}$ y 
+    $S = \{(a,b) \; | \; a = b+2\}$. Realice lo siguiente:
+
+    \begin{itemize}
+        % Ejercicio 2.1
+        \item Calcule $R$ y $S$
+        % Ejercicio 2.2
+        \item Calcule $R ∘ S$
+        % Ejercicio 2.3
+        \item Calcule $R^{3}$
+    \end{itemize}
+
+    % Ejercicio 3.
+    \item Demuestra que $(R^{-1})^{-1} = R$.
+
+    % Ejercicio 4.
+    \item Para las siguientes relaciones, argumente si cumplen o no con las 
+    propiedades de reflexividad, simetría, antisimetría y transitividad.
+
+    \begin{itemize}
+        % Ejercicio 4.1
+        \item Sean $R$ la relación definida en los números reales por $xRy$
+        si y sólo si $x \leq y$.
+        % Ejercicio 4.2
+        \item Sean $A = \{a,b,c,d\}$ y $R = \{(a,a), (a,b), (a,c), (b,a), (b,b),
+        (b,c), (b,d), (d,d)\}$
+        % Ejercicio 4.3
+        \item Sea $A = ℤ^{+} × ℤ^{+}$ y $R$ la relación $R = \{(a,b), (c,d)) \; 
+        | \; a + d = b + c\}$
+    \end{itemize}
+
+    % Ejercicio 5.
+    \item Conteste los siguientes incisos.
+    \begin{itemize}
+        % Ejercicio 5.1
+        \item ¿Puede una relación en un conjunto no ser reflexiva ni
+        antirreflexiva? Justifique su respuesta.
+        % Ejercicio 5.2
+        \item ¿Puede una relación en un conjunto ser simétrica y 
+        antisimetríca? ¿O ser asimétrica y antisimétrica también? Justifique su
+        respuesta.  
+    \end{itemize}
+
+    % Ejercicio 6.
+    \item Muestre que una relación $R$ sobre $A$:
+    \begin{itemize}
+        % Ejercicio 6.1
+        \item Es reflexiva si y sólo si $I_{A} ⊆ R$
+        % Ejercicio 6.2
+        \item Es simétrica si y sólo si $R = R^{-1}$
+        % Ejercicio 6.3
+        \item Es transitiva si y sólo si $R ∘ R ⊆ R$
+    \end{itemize}
+
+    % Ejercicio 7.
+    \item Sea $A = ℝ$. Definimos $R ⊆ A × A$ donde $R = \{(x, y) \; | \; 
+    ⌊2x⌋ = ⌊2y⌋\}$ donde $⌊2x⌋$ se define como el mayor entero $i \in ℤ$ tal que 
+    $i \leq x$.
+    \begin{itemize}
+        % Ejercicio 7.1
+        \item Verifique que $R$ sea una relación de equivalencia.
+        % Ejercicio 7.2
+        \item Determine las clases de equivalencia de $\frac{1}{4}$ y 
+        $\frac{1}{2}$.
+        % Ejercicio 7.3
+        \item Describa la partición de $ℝ$ en clases de equivalencia.
+    \end{itemize}
+
+    % Ejercicio 8.
+    \item Determine si las siguientes relaciones son de equivalencia. Si lo son,
+    demuestre cada una de las propiedades, si no lo son, exhiba un ejemplo de  
+    por qué no se cumple alguna propiedad.
+    \begin{itemize}
+        % Ejercicio 8.1
+        \item $R = \{(a,b) \; : \; a,b \in ℤ, a+b$ es impar$\}$
+        % Ejercicio 8.2
+        \item $R = \{(a,b) \; : \; a,b \in ℤ, a+b$ es par$\}$
+        % Ejercicio 8.3
+        \item $R = \{(a,b) \; : \; a,b \in ℤ, |a-b| \leq 5\}$
+        % Ejercicio 8.4
+        \item $R = \{(a,b) \; : \; a, b \in ℤ, |a-b| < 1\}$
+    \end{itemize}
+
+    % Ejercicio 9.
+    \item Una partición $P_{1}$ es un refinamiento de la partición $P_{2}$ si 
+    cada conjunto $P_{1}$ es subconjunto de algún conjunto en $P_{2}$. Muestre 
+    que la partición formada por las clases de congruencia módulo $6$ es un 
+    refinamiento de la partición formada por las clases de congruencia módulo 
+    $3$.
+
+    % Ejercicio 10.
+    \item Sea $A$ un subconjunto de $ℕ$, y sea $\preceq$ la relación sobre $A$
+    definida por $a \preceq b$ si y sólo si $b = a^{k}$ para alguna $k \in ℕ$,
+    para cada $a,b \in A$. Demuestre que $(A, \preceq)$ es un conjunto 
+    parcialmente ordenado. ¿Es $(A, \preceq)$ un conjunto totalmente ordenado?
+
+    % Ejercicio 11.
+    \item Sea $A$ un conjunto no vacío, y sea $R$ una relación sobre $A$. La 
+    relación $R$ es un cuasi-orden si es reflexiva y transitiva. Suponga que 
+    $R$ es un cuasi-orden. Sea $\sim$ la relación sobre $A$ definida por 
+    $x \sim y$ si y sólo si $xRy$ y $yRx$ para cualesquiera $x, y \in A$.
+
+    \begin{itemize}
+        % Ejercicio 11.1
+        \item Demuestre que $\sim$ es una relación de equivalencia.
+        % Ejercicio 11.2
+        \item Sean $x, y, a, b \in A$. Demuestre que si $xRy$  y $y \sim b$,
+        entonces $aRb$.
+        % Ejercicio 11.3
+        \item Considere el conjunto $A/\sim$ definida por $[x]S[y]$ si y sólo 
+        si $xRy$. Demuestre que $(A/\sim, S)$ es un conjunto parcialmente
+        ordenado.
+    \end{itemize}
+
+    % Ejercicio 12.
+    \item Sea $(A, \preceq)$ un conjunto parcialmente ordenado, sea $X$ un 
+    conjunto, y sea $h: X → A$ una función inyectiva. Sea $\preceq'$ la 
+    relación sobre $X$ definida por $x \preceq' y$ si y sólo si $h(x) 
+    \preceq h(y)$, para cada $x, y \in X$. Demuestre que $(X, \preceq')$ es 
+    un conjunto parcialmente ordenado.
+\end{enumerate}
+\end{document}
