@@ -248,11 +248,50 @@
     \begin{itemize}
         % Ejercicio 7.1
         \item Verifique que $R$ sea una relación de equivalencia.
+
+        \textsc{Solución:}
+        \begin{itemize}
+            \item Relexividad. Sea $x \in R$. Es claro que $⌊2x⌋ = ⌊2x⌋$, 
+            por lo que $(x, x) \in R$. 
+
+            \item Simetría. Sea $(x, y) \in R$. Entonces $⌊2x⌋ = ⌊2y⌋$, y por 
+            la conmutatividad de la igualdad, tenemos que $⌊2y⌋ = ⌊2x⌋$. Por
+            lo tanto, $(y, x) \in R$. 
+
+            \item Transitividad. Sean $(x, y), (y,z) \in R$. Entonces 
+            $⌊2x⌋ = ⌊2y⌋ \land ⌊2y⌋ = ⌊2z⌋$. Por la transitividad de la 
+            igualdad tenemos que $⌊2x⌋ = ⌊2z⌋$, lo que implica que 
+            $(x, z) ∈ R$. 
+        \end{itemize}
+
         % Ejercicio 7.2
         \item Determine las clases de equivalencia de $\frac{1}{4}$ y 
         $\frac{1}{2}$.
+
+        \textsc{Solución:} Como $⌊2(\frac{1}{4})⌋ = ⌊\frac{1}{2}⌋ = 0$ entonces 
+        tenemos que la clase de equivalencia de $\frac{1}{4}$ es el conjunto 
+
+        \begin{align*}
+            \{ x ∈ ℝ \; : \; ⌊2x⌋ = 0\}
+            &= \{x ∈ ℝ \; : \; 0 \leq 2x < 1\} \\ 
+            &= \{x ∈ ℝ \; : \; 0 \leq x < \frac{1}{2}\}
+        \end{align*}
+
+        Y como $⌊2(\frac{1}{2})⌋ = ⌊1⌋ = 1$ entonces tenemos que la clase de  
+        equivalencia de $\frac{1}{4}$ es el conjunto 
+
+        \begin{align*}
+            \{x ∈ ℝ \; : \; ⌊2x⌋ = 1\} 
+            &= \{x ∈ ℝ \; : \; 1 \leq 2x < 2\} \\ 
+            &= \{x ∈ ℝ \; : \; \frac{1}{2} \leq x < 1\}
+        \end{align*}
+
         % Ejercicio 7.3
         \item Describa la partición de $ℝ$ en clases de equivalencia.
+
+        \textsc{Solución:} Sean $C_{1} = \{[x, x + \frac{1}{2}) \: : \; x ∈ ℤ\}$
+        y $C_{2} = \{[x + \frac{1}{2}, x + 1) \; : \; x ∈ ℤ\}$. La partición de 
+        $R$ en clases de equivalencia está dada por $P = C_{1} ∪ C_{2}$. 
     \end{itemize}
 
     % Ejercicio 8.
