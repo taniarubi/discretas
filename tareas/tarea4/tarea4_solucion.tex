@@ -93,12 +93,70 @@
         % Ejercicio 4.1
         \item Sean $R$ la relación definida en los números reales por $xRy$
         si y sólo si $x \leq y$.
+
+        \textsc{Solución:}
+        \begin{itemize}
+            \item Reflexividad. Esta relación cumple con esta propiedad ya que 
+            para cualquier $x \in R$ se tiene que $xRx$ pues $x \leq x$.
+
+            \item Simetría. Esta relación no cumple con esta propiedad ya que
+            $2, 3 \in R$ y entonces $2 \leq 3$ pero $3 \not \leq 2$.
+
+            \item Antisimetría. Esta relación cumple con esta propiedad ya que 
+            para cualquier $x, y \in R$ se tiene que si $xRy \land yRx$ entonces 
+            $x \leq y \land y \leq x$ y por la antisimétría de $\leq$, obtenemos 
+            que $x = y$.
+
+            \item Transitividad. Esta relación cumple con esta propiedad ya
+            que para cualquier $x, y, z \in R$ se tiene que si $xRy \land yRz$
+            entonces $x \leq y \land y \leq z$ y por transitividad de $\leq$
+            obtenemos que $x \leq z$, lo cual implica que $xRz$. 
+        \end{itemize}
+
         % Ejercicio 4.2
         \item Sean $A = \{a,b,c,d\}$ y $R = \{(a,a), (a,b), (a,c), (b,a), (b,b),
         (b,c), (b,d), (d,d)\}$
+
+        \textsc{Solución:}
+        \begin{itemize}
+            \item Reflexividad. Esta relación no cumple con esta propiedad ya
+            que $(c, c) \not \in R$.
+
+            \item Simetría. Esta relación no cumple con esta propiedad ya que 
+            $(a, c) \in R$ pero $(c, a) \not \in R$.
+
+            \item Antisimetría. Esta relación no cumple con esta propiedad ya
+            que $(a, b), (b, a) \in R$, pero $a \not = b$.
+
+            \item Transitividad. Esta relación no cumple con esta propiedad ya 
+            que $(a, b), (b, d) \in R$, pero $(a, d) \not \in R$.
+        \end{itemize}
+
         % Ejercicio 4.3
         \item Sea $A = ℤ^{+} × ℤ^{+}$ y $R$ la relación $R = \{(a,b), (c,d)) \; 
         | \; a + d = b + c\}$
+
+        \textsc{Solución:}
+        \begin{itemize}
+            \item Reflexividad. Esta relación cumple con esta propiedad ya que 
+            para cualquier $(a, b) \in R$ tenemos que $a + b = b + a$, por lo 
+            que $((a, b), (b, a)) \in R$.
+
+            \item Simetría. Esta relación cumple con esta propiedad ya que 
+            si $((a, b), (c, d)) \in R$ entonces $a + d = b + c$, y por la 
+            conmutatividad de la suma en $ℤ$ tenemos que $c + b = d + a$, 
+            lo que implica que $((c, d), (a, b)) \in R$. 
+
+            \item Antisimetría. Esta relación no cumple con esta propiedad 
+            ya que \\ $((1, 1), (2, 2)), ((2, 2), (1,1)) \in R$ pero 
+            $((1,1) \not = (2,2))$.
+            \item Transitividad. Esta relación cumple con esta propiedad ya que 
+            si \\ $((a, b), (c, d)), ((c, d), (e, f)) \in R$ entonces 
+            $a + d = b + c \land c + f = d + e$. Sumando ambas igualdades 
+            tenemos que $a + d + c + f = b + c + d + e$ y usando la ley de la 
+            cancelación en la suma obtenemos $a + f = b + e$, lo que implica 
+            que $((a, b), (e, f)) \in R$. 
+        \end{itemize}
     \end{itemize}
 
     % Ejercicio 5.

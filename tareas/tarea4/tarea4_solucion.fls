@@ -115,6 +115,8 @@ INPUT /usr/share/texmf-dist/tex/latex/ucs/data/uni-33.def
 INPUT /usr/share/texmf-dist/tex/latex/ucs/data/uni-33.def
 OUTPUT /home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/ucs/data/uni-35.def
 INPUT /usr/share/texmf-dist/tex/latex/ucs/data/uni-35.def
 INPUT /home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.aux

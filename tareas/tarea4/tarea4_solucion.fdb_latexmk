@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1580578712 "tarea4_solucion.tex" "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.pdf" "tarea4_solucion" 1580578713
-  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.aux" 1580578713 67 9d6fa3768167d35926fbc25a417ce799 ""
+["pdflatex"] 1580672332 "tarea4_solucion.tex" "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.pdf" "tarea4_solucion" 1580672332
+  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.aux" 1580672332 67 9d6fa3768167d35926fbc25a417ce799 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1572595918 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/eccc1095.tfm" 1572595918 3072 1b1df026a15993ee98d265b49cf8d5f2 ""
@@ -63,6 +63,7 @@
   "/usr/share/texmf-dist/tex/latex/base/fontenc.sty" 1572595918 4571 68999fcec19eaab44a6e13159b4dca8a ""
   "/usr/share/texmf-dist/tex/latex/base/inputenc.sty" 1572595918 5050 aae684508bdbe288a555910330f17c1b ""
   "/usr/share/texmf-dist/tex/latex/base/latexsym.sty" 1572595918 2854 fe32a3e7ea0af34e2aa71d84be186152 ""
+  "/usr/share/texmf-dist/tex/latex/base/omscmr.fd" 1572595918 2470 eac9b55b50df56621bd69fa9b6495a74 ""
   "/usr/share/texmf-dist/tex/latex/base/size11.clo" 1572595918 8421 938fa22cdc088594d8815cd38fcf77c0 ""
   "/usr/share/texmf-dist/tex/latex/base/t1enc.def" 1572595918 10687 a7567925dae1870ed1d4a2e413995d60 ""
   "/usr/share/texmf-dist/tex/latex/base/ulasy.fd" 1572595918 2234 5addd28de791a63070e1730387f7af37 ""
@@ -83,11 +84,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1572595918 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1579191817 4700588 6cff29fd2f933ef89e76aa832077506f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1579191760 8044939 3a7613ff68ee56667d5e5207e9678c8c ""
-  "tarea4_solucion.aux" 1580578713 67 9d6fa3768167d35926fbc25a417ce799 "pdflatex"
-  "tarea4_solucion.tex" 1580578712 7227 48a7b274d37f8c545722b2705967f23c ""
+  "tarea4_solucion.aux" 1580672332 67 9d6fa3768167d35926fbc25a417ce799 "pdflatex"
+  "tarea4_solucion.tex" 1580672331 9977 5ada87ffa3d68a6fe51e69c357addf07 ""
   (generated)
-  "tarea4_solucion.aux"
   "tarea4_solucion.log"
   "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.log"
-  "tarea4_solucion.pdf"
+  "tarea4_solucion.aux"
   "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.pdf"
+  "tarea4_solucion.pdf"
