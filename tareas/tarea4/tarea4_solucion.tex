@@ -186,10 +186,59 @@
     \begin{itemize}
         % Ejercicio 6.1
         \item Es reflexiva si y sólo si $I_{A} ⊆ R$
+
+        \begin{proof} .
+            \begin{itemize}
+                \item[$⇒$] Supongamos que $R$ es reflexiva. Sea $x \in I_{A}$.
+                Por definición, $x = (a, a)$ para algún $a \in A$. Por 
+                hipótesis, tenemos que $(a, a) \in R$, por lo que $x \in R$, 
+                lo que implica que $I_{A} ⊆ A$.
+
+                \item[$⇐$] Supongamos que $I_{A} ⊆ R$. Sea $a \in A$. Como 
+                $(a, a) \in I_{A}$, por hipótesis tenemos que $(a, a) \in R$,
+                lo que implica que para cada $a \in A$ se tiene que 
+                $(a, a) \in R$, por lo que $R$ es reflexiva. 
+            \end{itemize}
+        \end{proof}
+
         % Ejercicio 6.2
         \item Es simétrica si y sólo si $R = R^{-1}$
+
+        \begin{proof} . 
+            \begin{itemize}
+                \item[$⇒$] Supongamos que $R$ es simétrica. Entonces  
+                \begin{align*}
+                    (a, b) \in R 
+                    &⇔ (b, a) \in R \\ 
+                    &⇔ (a, b) \in R^{-1}
+                \end{align*}
+                
+                Por lo tanto, podemos concluir que $R = R^{-1}$.
+
+                \item[$⇐$] Supongamos que $R = R^{-1}$. Sea $(a, b) \in R$.
+                por definición de $R^{-1}$, tenemos que $(b, a) \in R^{-1}$, 
+                pero por hipótesis $(b, a) \in R$. Por lo tanto, $R$ es 
+                simétrica.  
+            \end{itemize}
+        \end{proof}
+
         % Ejercicio 6.3
         \item Es transitiva si y sólo si $R ∘ R ⊆ R$
+        
+        \begin{proof} .
+            \begin{itemize}
+                \item[$⇒$] Supongamos que $R$ es transitiva. Sea 
+                $(a, c) \in R ∘ R$. Por definición de composición, existe 
+                $b \in A$ tal que $(a, b), (b, c) \in R$. Y por hipótesis,
+                esto último implica que $(a, c) \in R$, por lo que podemos 
+                concluir que $R ∘ R ⊆ R$.
+
+                \item[$⇐$] Supongamos que $R ∘ R ⊆ R$. Sean 
+                $(a, b), (b, c) \in R$. Por definición de composición, tenemos 
+                que $(a, c) \in R ∘ R$ y por hipótesis podemos concluir que 
+                $(a, c) \in R$. Por lo tanto, $R$ es transitiva. 
+            \end{itemize}
+        \end{proof}
     \end{itemize}
 
     % Ejercicio 7.
