@@ -301,12 +301,50 @@
     \begin{itemize}
         % Ejercicio 8.1
         \item $R = \{(a,b) \; : \; a,b \in ℤ, a+b$ es impar$\}$
+
+        \textsc{Solución:} No es una relación de equivalencia pues no cumple 
+        con la propiedad de reflexividad. Para cualquier $a \in ℤ$ tenemos que 
+        $a + a = 2a$, que es par, por lo que $(a, a) ∉ R$.
+        
         % Ejercicio 8.2
         \item $R = \{(a,b) \; : \; a,b \in ℤ, a+b$ es par$\}$
+
+        \begin{proof} . 
+            \begin{itemize}
+                \item Reflexividad. Para cualquier $a ∈ R$, tenemos que 
+                $a + a = 2a$, que es par, por lo que $(a, a) ∈ R$. 
+
+                \item Simetría. Si $(a, b) ∈ R$ entonces $a + b$ es par, y 
+                como $a + b = b + a$, eso implica que $b + a$ es par. Por lo 
+                tanto, $(b, a) ∈ R$. 
+
+                \item Transitividad. Si $(a, b), (b, c) ∈ R$ entonces $a + b$ y 
+                $b + c$ son pares, es decir, existen $r, s ∈ R$ tales que 
+                $a + b = 2r$ y $b + c = 2s$. Igualando ambas expresiones 
+                obtenemos que 
+                \begin{align*}
+                    a + b + b + c &= 2r + 2s \\ 
+                    a + 2b +c &= 2r + 2s \\ 
+                    a + c &= 2r + 2s + 2b \\ 
+                    a + c &= 2(r + s +b)
+                \end{align*} 
+                
+                Como $a + c$ es par, entonces podemos concluir que $(a, c) ∈ R$. 
+            \end{itemize}
+        \end{proof}
+
         % Ejercicio 8.3
-        \item $R = \{(a,b) \; : \; a,b \in ℤ, |a-b| \leq 5\}$
+        \item $R = \{(a,b) \; : \; a,b ∈ ℤ, |a-b| \leq 5\}$
+
+        \textsc{Solución:} No es una relación de equivalencia ya que no cumple 
+        con la propiedad de transitivdad. Esto porque $(0, 5), (5, 10) ∈ R$ 
+        pero $(0, 10) ∉ R$ pues $|0 - 10| = 10 \not \leq 5$. 
         % Ejercicio 8.4
         \item $R = \{(a,b) \; : \; a, b \in ℤ, |a-b| < 1\}$
+
+        \textsc{Solución:} No es una relación de equivalencia ya que no cumple 
+        con la propiedad de transitividad. Esto porque $(0, \frac{1}{2}), 
+        (\frac{1}{2}, 1) ∈ R$ pero $(0, 1) ∉ R$ pues $|0 - 1| = 1 \not < 1$. 
     \end{itemize}
 
     % Ejercicio 9.
