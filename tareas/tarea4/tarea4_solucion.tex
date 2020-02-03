@@ -369,7 +369,7 @@
         por lo tanto, la partición formada por las clases de congruencia módulo 
         $6$ es un refinamiento de la partición formada por las clases de 
         congruencia módulo $3$. 
-        
+
     \end{proof}
 
     % Ejercicio 10.
@@ -377,6 +377,33 @@
     definida por $a \preceq b$ si y sólo si $b = a^{k}$ para alguna $k \in ℕ$,
     para cada $a,b \in A$. Demuestre que $(A, \preceq)$ es un conjunto 
     parcialmente ordenado. ¿Es $(A, \preceq)$ un conjunto totalmente ordenado?
+
+    \begin{proof} .
+        \begin{itemize}
+            \item Reflexividad. Sea $a ∈ ℕ$. Es claro que $a = a^{1}$, por lo 
+            que $a \preceq a$.
+
+            \item Antisimetría. Si $a \preceq b$ y $b \preceq a$ entonces 
+            existen $r, s ∈ ℕ$ tales que $b = a^{r}$ y $a = b^{s}$. Sustituyendo
+            el valor de $b$ de la primera expresión en la segunda obtenemos que 
+            $a = (a^{r})^{s} = a^{rs}$, lo que implica que $rs = 1$. Como $r$ y 
+            $s$ son naturales, entonces forzosamente $r = 1 = s$, por lo que 
+            $a = b$. 
+
+            \item Transitividad. Si $a \preceq b$ y $b \preceq c$ entonces 
+            $b = a^{r}$ y $c = b^{s}$ para algunos $r, s ∈ ℕ$. Sustituyendo 
+            el valor de $b$ de la  primer expresión en la segunda obtenemos que 
+            $c = (a^{r})^{s}$ de donde $c = a^{r ⋅ s}$, lo que implica que 
+            $a \preceq c$. 
+        \end{itemize}
+
+        El orden $\preceq$ no es total. Como $2 \not = 3$ y sólo estan
+        permitidos los exponentes naturales, entonces no existe $k ∈ ℕ$ tal que 
+        $2^{k} = 3$, o que $3^{k} = 2$, por lo que $2 \not \preceq 3$ y 
+        $3 \not \preceq 2$. Así, $\preceq$ no es tricotómica, y por lo tanto, no 
+        es un orden total.
+
+    \end{proof}
 
     % Ejercicio 11.
     \item Sea $A$ un conjunto no vacío, y sea $R$ una relación sobre $A$. La 
