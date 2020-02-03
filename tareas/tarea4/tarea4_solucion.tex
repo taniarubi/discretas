@@ -414,13 +414,54 @@
     \begin{itemize}
         % Ejercicio 11.1
         \item Demuestre que $\sim$ es una relación de equivalencia.
+
+        \begin{proof} .
+            \begin{itemize}
+                \item Reflexividad. Sea $a ∈ A$. Como $R$ es reflexiva, entonces 
+                $aRa$, por lo que $a \sim a$, y así $\sim$ es reflexiva.
+
+                \item Simetría. Si $a \sim b$ entonces $aRb$ y $bRa$, por lo que 
+                $bRa$ y $aRb$, lo que implica que $b \sim a$.
+
+                \item Transitividad. Si $a \sim b$ y $b \sim c$ entonces 
+                $aRb$, $bRa$, $bRc$ y $cRb$. Como $R$ es transitiva, entonces 
+                podemos obtener $aRc$ y $cRa$, lo cual implica que $a \sim c$. 
+            \end{itemize}
+        \end{proof}
+
         % Ejercicio 11.2
-        \item Sean $x, y, a, b \in A$. Demuestre que si $xRy$  y $y \sim b$,
-        entonces $aRb$.
+        \item Sean $x, y, a, b \in A$. Demuestre que si $xRy$, $x \sim a$ y 
+        $\sim b$, entonces $aRb$.
+
+        \begin{proof}
+            Supongamos que $xRy$ y $y \sim b$. Entonces $yRb$ y $bRy$. Como 
+            $R$ es transitiva, por hipótesis podemos obtener que $xRb$. Por 
+            definición $x \sim a$ implica que $xRa$ y $aRx$. Así, aplicando 
+            nuevamente la transitividad de $R$ obtenemos que $aRx$ y $xRb$, 
+            de donde obtenemos $aRb$.
+
+        \end{proof}
+
         % Ejercicio 11.3
         \item Considere el conjunto $A/\sim$ definida por $[x]S[y]$ si y sólo 
         si $xRy$. Demuestre que $(A/\sim, S)$ es un conjunto parcialmente
         ordenado.
+
+        \begin{proof} .
+            \begin{itemize}
+                \item Reflexividad. Sea $a \in A$. Como $R$ es reflexiva,
+                entonces $aRa$, de donde $[a]S[a]$, por lo que $S$ es reflexiva.
+
+                \item Antisimetría. Si $a, b ∈ A$ son tales que $[a]S[b]$ y 
+                $[b]S[a]$, por definición de $S$, tenemos que $aRb$ y $bRa$, 
+                por lo que $a \sim b$ y como $\sim$ es de equivalencia, esto 
+                implica que $[a] = [b]$. 
+
+                \item Transitividad. Si $[a]S[b]$ y $[b]S[c]$ entonces $aRb$ y 
+                $bRc$, pero como $R$ es transitiva entonces podemos obtener 
+                $aRc$, lo que implica que $[a]S[c]$.
+            \end{itemize}
+        \end{proof}
     \end{itemize}
 
     % Ejercicio 12.

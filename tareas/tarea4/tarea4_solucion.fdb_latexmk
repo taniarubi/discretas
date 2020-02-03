@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1580690891 "tarea4_solucion.tex" "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.pdf" "tarea4_solucion" 1580690892
-  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.aux" 1580690892 67 9d6fa3768167d35926fbc25a417ce799 ""
+["pdflatex"] 1580691962 "tarea4_solucion.tex" "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.pdf" "tarea4_solucion" 1580691989
+  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.aux" 1580691963 67 9d6fa3768167d35926fbc25a417ce799 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1572595918 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1572595918 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/eccc1095.tfm" 1572595918 3072 1b1df026a15993ee98d265b49cf8d5f2 ""
@@ -84,11 +84,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1572595918 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1579191817 4700588 6cff29fd2f933ef89e76aa832077506f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1579191760 8044939 3a7613ff68ee56667d5e5207e9678c8c ""
-  "tarea4_solucion.aux" 1580690892 67 9d6fa3768167d35926fbc25a417ce799 "pdflatex"
-  "tarea4_solucion.tex" 1580690891 18391 ef06b74a446084cab16a2d0d43a7e77c ""
+  "tarea4_solucion.aux" 1580691963 67 9d6fa3768167d35926fbc25a417ce799 "pdflatex"
+  "tarea4_solucion.tex" 1580691989 20178 a69dd877e651afd9b6b70fe760420e2c ""
   (generated)
-  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.pdf"
-  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.log"
   "tarea4_solucion.log"
   "tarea4_solucion.pdf"
+  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.log"
+  "/home/taniarubi/Documents/fciencias/discretas/tareas/tarea4/tarea4_solucion.pdf"
   "tarea4_solucion.aux"
