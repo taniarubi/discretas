@@ -1,0 +1,31 @@
+4. En un cine, a las peículas de clasificación A pueden entrar exlusivamente niños
+de 3 a 12 años (los de 3 y 12 años inclusive).
+Diseña un circuito que diga si un niño puede entrar o no.
+
+Variables:
+Se toman las edades de acuerdo a su respectiva conversión en binario de 4 bits.
+Por ejemplo, la edad 3 sería 0011.
+Por lo que, la tabla de verdad quedaría así:
+
+W  X  Y  Z   Entra o no
+0  0  0  0       0       //Edad = 0
+0  0  0  1       0       //Edad = 1
+0  0  1  0       0       //Edad = 2
+0  0  1  1       1       //Edad = 3
+0  1  0  0       1       //Edad = 4
+0  1  0  1       1       //Edad = 5
+0  1  1  0       1       //Edad = 6
+0  1  1  1       1       //Edad = 7
+1  0  0  0       1       //Edad = 8
+1  0  0  1       1       //Edad = 9
+1  0  1  0       1       //Edad = 10
+1  0  1  1       1       //Edad = 11
+1  1  0  0       1       //Edad = 12
+1  1  0  1       0       //Edad = 13
+1  1  1  0       0       //Edad = 14
+1  1  1  1       0       //Edad = 15
+
+Expresión minimizada: (¬W Y Z) + (¬W X) + (W ¬X) + (W ¬Y ¬Z)
+
+La expresión anterior también se puede escribir como:
+(¬W ∧ Y ∧ Z ) V (¬W ∧ X) V (W ∧ ¬X) V (W ∧ ¬Y ∧ ¬Z)

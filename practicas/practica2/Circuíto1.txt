@@ -1,0 +1,15 @@
+3.1.12.- La luz de una escalera se controla con tres apagadores, uno fuera de la casa,
+uno al pie de la escalera y otro al final de la escalera. Debe ser posible prender o
+apagar la luz desde cualquiera de estos apagadores, sin importar cuál es la posición
+de cualquiera de ellos. Diseñe un circuito que haga esto posible. (Pista: siempre que
+el número de apagadores prendidos sera impar, la luz estará prendida.)
+
+Variables:
+X = Apagador 1
+Y = Apagador 2
+Z = Apagador 3
+
+Expresión minimizada: (X Y Z) + (X ¬Y ¬Z) + (¬X Y ¬Z) + (¬X ¬Y Z)
+
+La expresión anterior también se puede escribir así:
+(X  ∧ Y ∧ Z) V (X ∧ ¬Y ∧ ¬Z) V (¬X ∧ Y ∧ ¬Z) V (¬X ∧ ¬Y ∧ Z)

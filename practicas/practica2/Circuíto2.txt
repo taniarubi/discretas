@@ -1,0 +1,17 @@
+3.1.16 El restaurante El Pollo Farsante está de aniversario y ofrece los siguientes
+ platillos especiales: ensalada de salicornia, venado en salsa de ciruela, pato al
+ Oporto y strudel de frutos del bosque. Adicionalmente, se regala una botella reserva
+ especial de vino Santa Clota en cualquier orden que incluya la ensalada, el pato y
+ el strudel; o bien, si se pide el venado. Se desea implementar un circuito que haga
+ sonar un timbre en la cava cuando una orden recibe el vino de cortesía.
+
+ Variables:
+ W = ensalada de salicornia
+ X = Venado en salsa de ciruela
+ Y = Pato al Oporto
+ Z = Strudel de frutos del bosque
+
+ Expresión minimizada: X + WYZ
+
+ La expresión anterior también se puede escribir como:
+ X V (X ∧ Y ∧ Z)

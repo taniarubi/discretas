@@ -1,0 +1,13 @@
+3. A, B y C quieren llegar a un acuerdo sobre una decisión de sí o no. Si A y B
+están de acuerdo, se decide lo que eligieron ellos, si no, lo que decida C.
+Diseña un circuito para modelar esta situación.
+
+Variables:
+X = A
+Y = B
+Z = C
+
+Expresión minimizada: Z + XY
+
+La expresión anterior se puede escribir también como:
+Z V (X  ∧ Y)
