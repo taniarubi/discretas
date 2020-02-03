@@ -354,6 +354,24 @@
     refinamiento de la partición formada por las clases de congruencia módulo 
     $3$.
 
+    \begin{proof}
+        Sean $a, b ∈ ℤ$ tales que $a ≡ b$ $(mod \; 6)$, es decir, $6$ divide a 
+        $a - b$. Por definición, esto significa que $a - b = 6k$ para alguna 
+        $k ∈ ℤ$. Así, $(a - b) = 3(2k)$ para alguna $k ∈ ℤ$, y por lo tanto,
+        podemos concluir que $3$ divide a $a - b$, es decir, $a ≡ b (mod \; 3)$.
+        Esto demuestra que si $a ≡ b (mod \; 6)$, entonces $(a ≡ b) (mod \; 3)$.
+
+        Consideremos ahora al entero $a$, a $X$, su clase de equivalencia bajo
+        la congruencia módulo $6$ y a $Y$, su clase de equivalencia bajo la 
+        congruencia módulo $3$. Por lo demostrado anteriormente, si $b ∈ X$
+        entonces $b ∈ Y$, por lo que $X ⊆ Y$. Así, toda clase de congruencia 
+        módulo $6$ está contenida en una clase de congruencia módulo $3$, y 
+        por lo tanto, la partición formada por las clases de congruencia módulo 
+        $6$ es un refinamiento de la partición formada por las clases de 
+        congruencia módulo $3$. 
+        
+    \end{proof}
+
     % Ejercicio 10.
     \item Sea $A$ un subconjunto de $ℕ$, y sea $\preceq$ la relación sobre $A$
     definida por $a \preceq b$ si y sólo si $b = a^{k}$ para alguna $k \in ℕ$,
