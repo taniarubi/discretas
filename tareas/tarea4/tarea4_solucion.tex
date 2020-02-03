@@ -470,5 +470,23 @@
     relación sobre $X$ definida por $x \preceq' y$ si y sólo si $h(x) 
     \preceq h(y)$, para cada $x, y \in X$. Demuestre que $(X, \preceq')$ es 
     un conjunto parcialmente ordenado.
+
+    \begin{proof} .
+        \begin{itemize}
+            \item Reflexividad. Sea $x ∈ X$. Como $(A, \preceq)$ es un conjunto
+            parcialmente ordenado, entonces $\preceq$ es reflexiva, de donde 
+            $h(x) \preceq h(x)$ y por definición esto implica que $x \preceq' x$.
+
+            \item Antisimetría. Si $x \preceq' y$ y $y \preceq' x$ entonces 
+            $h(x) \preceq h(y)$ y $h(y) \preceq h(x)$, y como $\preceq$ es 
+            antisimétrica, entonces podemos derivar que $h(x) = h(y)$. Como 
+            $h$ es inyectiva, entonces podemos concluir que $x = y$.
+
+            \item Transitividad. Si $x \preceq' y$ y $y \preceq' z$. Entonces 
+            $h(x) \preceq h(y)$ y $h(y) \preceq h(z)$, y como $\preceq$ es 
+            transitiva, entonces $h(x) \preceq h(z)$, lo que implica que 
+            $x \preceq' z$.
+        \end{itemize}
+    \end{proof}
 \end{enumerate}
 \end{document}
